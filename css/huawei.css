@@ -1,0 +1,127 @@
+* {
+    margin: 0;
+    padding: 0;
+
+}
+
+.container {
+    margin: 0 auto;
+    overflow: hidden;
+    width: 1524px;
+    text-align: center;
+}
+
+#login {
+    height: 50px;
+    background-color: darkgray;
+}
+
+#search {
+    height: 93px;
+    background-color: blanchedalmond;
+}
+
+#banner {
+    overflow: hidden;
+    height: 562px;
+    background-color: aquamarine;
+    text-align: center;
+}
+
+#supremacy {
+    height: 776px;
+    background-color: cadetblue;
+}
+
+#iphone {
+    height: 945px;
+    background-color: cornflowerblue;
+}
+
+#computer {
+    height: 1137px;
+    background-color: aliceblue;
+}
+
+#watch {
+    height: 945px;
+    background-color: darkcyan;
+}
+
+#home {
+
+    height: 946px;
+    background-color: #ffffff;
+}
+#home .small{
+    width:30px;
+    height:5px;
+    background-color:#990000;
+    margin: 0 auto; 
+    margin-top:75px;
+}
+#home .smartHome{
+    margin-top: 12px;
+    font-size: 36px;
+    color: #3a3a3a;
+}
+#home .wifi{
+    margin-top: 25px;
+    margin-left: 128px;
+}
+#home .wifi li{
+   margin-right: 30px;
+    float: left;
+    list-style: none;
+}
+#home .wifi li a{
+    font-size: 17px;
+    color: #717171;
+    
+}
+#home .more a{
+    display: inline-block;
+    font-size:14px;
+    width: 83px;
+    height: 35px;
+    color: #3a3a3a;
+    border:1px solid #b2b2b2;
+    text-align: center;
+    line-height: 35px;
+    margin-right: 23px;
+    margin-top:-5px;
+    text-decoration: none;
+    
+}
+#home .smartshow{
+    margin-top: 34px;
+   margin-left: 120px;
+}
+#home .smartshow img{
+    float:left;
+    margin-right: 16px;
+    margin-bottom: 16px;
+}
+#show01 {
+    height: 320px;
+    background-color: darkgray;
+    margin-top: 15px;
+}
+
+#parts {
+    background-color: darkolivegreen;
+    height: 945px;
+}
+
+#show02 {
+    height: 320px;
+    margin-top: 15px;
+    background-color: darkkhaki;
+}
+
+#footer {
+    margin-top: 75px;
+    height: 520px;
+    background-color: #f9f9f9;
+
+}
