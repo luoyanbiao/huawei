@@ -135,8 +135,69 @@
 }
 
 #watch {
+<<<<<<< HEAD
 	height: 945px;
 	background-color: darkcyan;
+=======
+    height: 945px;
+    background-color: rgb(218, 236, 152);
+  
+}
+.watch-top{
+   margin-bottom: 22px;
+   position: relative;
+}
+
+.watch-top .small{
+    width:30px;
+    height:5px;
+    background-color:#990000;
+    margin: 0 auto; 
+    margin-top:75px;
+    margin-bottom:13px; 
+  
+}
+.watch-top h3{
+    font-size: 36px;
+    color: #3a3a3a;
+    margin-bottom: 24px;
+}
+.watch-top h3:hover{
+    color: #990000;
+}
+.watch-top a{
+    color: #717171;
+    margin: 0 25px;
+    line-height: 35px;
+    text-decoration: none;
+}
+.watch-top a:last-of-type{
+    position: absolute; 
+    display: inline-block;
+    width: 83px;
+    height: 35px;
+    line-height: 35px;
+    border: 1px solid #b2b2b2;
+    right: 197px;
+}
+.watch-top a:last-of-type i{
+    display: block;
+    width: 0px;
+    height: 0px;
+    border: 7px solid #b2b2b2;
+    border-color: transparent #b2b2b2 transparent #b2b2b2;
+    border-right: 0;
+    position: absolute;
+    top: 11px;
+    right: 9px;
+} 
+.watch-top a:hover{
+    color: #990000;
+    border-color: #990000;
+}
+.watch-top a:hover i {
+    border-left-color: #990000;
+>>>>>>> 53aab8bd9add4de55f1b2322376d47647214c88e
 }
 
 #home {
