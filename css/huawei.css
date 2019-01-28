@@ -82,7 +82,7 @@
     border: 1px solid #b2b2b2;
     right: 197px;
 }
-.watch-topa:last-of-type i{
+.watch-top a:last-of-type i{
     display: block;
     width: 0px;
     height: 0px;
