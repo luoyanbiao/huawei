@@ -134,18 +134,22 @@
 	background-color: aliceblue;
 }
 
+/*---------------------------------------- watch部分 ---------------------------------------------------*/
 #watch {
-<<<<<<< HEAD
-	height: 945px;
-	background-color: darkcyan;
-=======
     height: 945px;
     background-color: rgb(218, 236, 152);
   
 }
+#watch .title{
+    width:30px;
+    height:2px;
+    background-color:#990000;
+    margin: 23px 0  22px 0;
+}
 .watch-top{
    margin-bottom: 22px;
    position: relative;
+   text-align: center;
 }
 
 .watch-top .small{
@@ -157,10 +161,11 @@
     margin-bottom:13px; 
   
 }
-.watch-top h3{
+.watch-top h3 {
     font-size: 36px;
     color: #3a3a3a;
     margin-bottom: 24px;
+    cursor: pointer;
 }
 .watch-top h3:hover{
     color: #990000;
@@ -169,7 +174,8 @@
     color: #717171;
     margin: 0 25px;
     line-height: 35px;
-    text-decoration: none;
+	text-decoration: none;
+	font-size: 17px;
 }
 .watch-top a:last-of-type{
     position: absolute; 
@@ -189,7 +195,7 @@
     border-right: 0;
     position: absolute;
     top: 11px;
-    right: 9px;
+    right: 10px;
 } 
 .watch-top a:hover{
     color: #990000;
@@ -197,8 +203,163 @@
 }
 .watch-top a:hover i {
     border-left-color: #990000;
->>>>>>> 53aab8bd9add4de55f1b2322376d47647214c88e
 }
+
+.watch-left{
+    float: left;
+    margin-right: 15px;
+    margin-left: 12px;
+}
+.watch-left img{width: 364px;
+                height: 724px;}
+.watch-middle{
+    float: left;  
+}
+.watch-middle .child{
+    display: block;
+    width: 743px;
+    height: 362px;
+    position: relative;
+}
+.watch-middle ul:first-of-type{
+    position: relative; 
+    margin-bottom: 15px; 
+}
+.watch-middle .mess{
+     position: absolute;
+     top: 0;
+     left: 39px;
+}
+.watch-middle .mess h4{
+   font-size: 22px;
+   color: #000;
+   margin-bottom: 28px;
+}
+.watch-middle .mess span{
+    float: left;
+    color: #990000;
+    
+ }
+ .watch-middle i{
+       display: block;
+       width: 48px;
+       height: 48px;
+       background: url(../images/img29.png)no-repeat ;
+       position: absolute;
+       right: 28px;
+       bottom: 28px;
+ }
+
+
+
+.watch-middle .img37{
+    display: inline-block;
+    width: 364px;
+    height: 346px;
+    margin-right: 10px;
+    position: relative;
+}
+
+.img37 .mess{
+    position: absolute;
+    top: 0;
+    left: 39px;
+}
+.img37 .mess h4{
+  font-size: 22px;
+  color: #000;
+  margin-bottom: 28px;
+}
+.img37 .mess span{
+   float: left;
+   color: #990000;
+   
+}
+
+.watch-middle .img36{
+    display: inline-block;
+    width: 364px;
+    height: 346px;
+    position: relative;
+}
+
+.img36 .mess{
+    position: absolute;
+    top: 0;
+    left: 39px;
+}
+.img36 .mess h4{
+  font-size: 22px;
+  color: #fff;
+  margin-bottom: 28px;
+}
+.img36 .mess span{
+   float: left;
+   color: #fff;
+   
+}
+
+.watch-right{
+    float: right;
+    margin-right: 10px;
+}
+
+.watch-right .img40{
+   
+    display: block;
+    width: 364px;
+}
+.watch-right ul:first-of-type{
+    position: relative;
+   
+}
+
+.watch-right ul:first-of-type .mess{
+    position: absolute;
+    top: 0;
+    left: 39px;
+}
+.watch-right ul:first-of-type .mess h4{
+  font-size: 22px;
+  color: #fff;
+  margin-bottom: 28px;
+}
+.watch-right ul:first-of-type .mess span{
+   float: left;
+   color: #fff;
+   
+}
+.watch-right ul:first-of-type i{
+      display: block;
+      width: 48px;
+      height: 48px;
+      background: url(../images/img27.png)no-repeat ;
+      position: absolute;
+      right: 28px;
+      bottom: 28px;
+}
+.watch-right ul:last-of-type{
+    margin-top: 11px;
+    position: relative;
+}
+
+.watch-right ul:last-of-type .mess{
+    position: absolute;
+    top: 0;
+    left: 39px;
+}
+.watch-right ul:last-of-type .mess h4{
+    font-size: 22px;
+    color: #000000;
+    margin-bottom: 28px;
+  }
+  .watch-right ul:last-of-type .mess span{
+     float: left;
+     color: #990000;
+     
+  }
+/*-------------------------------------------- Watch结束---------------------------------------------- */
+
 
 #home {
 	height: 946px;
