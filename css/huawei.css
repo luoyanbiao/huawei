@@ -67,6 +67,9 @@
     color: #3a3a3a;
     margin-bottom: 24px;
 }
+.watch-top h3:hover{
+    color: #990000;
+}
 .watch-top a{
     color: #717171;
     margin: 0 25px;
