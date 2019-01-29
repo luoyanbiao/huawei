@@ -11,7 +11,7 @@
 }
 
 
-/*导航栏*/
+/*--------------------导航栏------------------------------*/
 
 #login {
 	height: 50px;
@@ -25,12 +25,14 @@
 }
 
 #login .nav_l li {
-	padding: 0 10px;
+	
 	float: left;
 	position: relative;
 }
-
-#login .nav_l li:hover a {
+#login .nav_l li>a{
+	padding: 0 10px;
+}
+#login li:hover>a {
 	color: red;
 }
 
@@ -48,16 +50,32 @@
 	left: 0;
 	background: #d3d3d3;
 }
-
+#login .s-dropdown{
+	height: 50px;
+	margin-top: -13px;
+	padding: 0 10px
+}
+#login .nav_r .s-dropdown{
+	padding: 0 13px
+}
+#login .hover{
+	color: red;
+	background: white;
+}
 #login .nav_l .s-dropdown{
 	position: relative;
 }
+#login .s-dropdown .t{
+	padding-top: 13px;
+}
 #login .nav_l .s-dropdown .d .dropdown-more{
-	padding-top: 15px;
+	display: none;
+	background-color: white;
+	margin-top: 15px;
 	width: 119px;
 	position: absolute;
-	left: -34px;
-	display: none;
+	left: -17px;
+	/*display: none;*/
 }
 #login .nav_l .s-dropdown .d .dropdown-more a{
 	margin-top: 5px;
@@ -70,7 +88,9 @@
 }
 #login .nav_r li{
 	float: left;
-	padding: 0 13px;
+}
+#login .nav_r li>a{
+	padding: 0 13px
 }
 #login .nav_r .li1:before{
 	opacity: 0;
@@ -85,12 +105,18 @@
 	display: block;
 	position: relative;
 	top: 19px;
-	left: -16px;
+	left: -3px;
 	background: #d3d3d3;
 }
 #login .nav_r .s-dropdown .d .dropdown-more{
 	display: none;
-	padding-top: 15px;
+	width: 80px;
+	background-color: white;
+	text-align: center;
+	margin-top: 15px;
+	padding: 6px 0 12px 0;
+	border-radius: 0 0 10px 10px;
+	line-height: 32px;
 }
 #login .nav_r .s-dropdown .d .dropdown-more a{
 	display: block;
@@ -99,14 +125,146 @@
 #login .nav_r .s-dropdown .d .dropdown-navs{
 	display: none;
 	width: 893px;
-	height: 190px;
-	background-color: teal;
+	height: 160px;
+	background-color: white;
 	position: absolute;
 	top: 50px;
 	left: -500px;
+	border-radius: 0 0 10px 10px;
 }
-
-
+#login .nav_r .s-dropdown .d .dropdown-navs .dropdown-navs-icon{
+	float: left;
+	width: 50px;
+	margin: 37px 46px 0 49px;
+	text-align: center;
+}
+#login .nav_r .s-dropdown .d .dropdown-navs .dropdown-navs-icon span{
+	display: block;
+	width: 50px;
+	height: 50px;
+	background-image: url(../images/icon5.png);
+	background-position: -41px 0px;
+	
+}
+#login .nav_r .s-dropdown .d .dropdown-navs dl{
+	float: left;
+	width: 185px;
+	margin-top: 22px;
+    margin-bottom: 20px;
+}
+#login .nav_r .s-dropdown .d .dropdown-navs dl dt{
+	font-size: 16px;
+    color: #333;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+#login .nav_r .s-dropdown .d .dropdown-navs dl a{
+	float: left;
+    width: 80px;
+    margin-bottom: 4px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+#login .nav_r .s-dropdown .d .dropdown-code{
+	display: none;
+	width: 244px;
+	position: absolute;
+	right: 110px;
+	margin-top: 15px;
+	background-color: white;
+	border-radius: 0 0 10px 10px;
+	padding: 20px 0;
+}
+#login .nav_r .s-dropdown .d .dropdown-code .dropdown-code-detail{
+	width: 244px;
+	padding-bottom: 20px;
+	margin-bottom: 20px;
+	border-bottom: 1px solid black;
+}
+#login .nav_r .s-dropdown .d .dropdown-code .dropdown-code-detail:last-of-type{
+	padding-bottom: 0;
+	margin-bottom: 0;
+	border-bottom: none;
+}
+#login .nav_r .s-dropdown .d .dropdown-code img{
+	float: left;
+	width: 90px;
+	height: 90px;
+	margin-right: 20px;
+	margin-left: 20px;
+}
+#login .nav_r .s-dropdown .d .dropdown-code .code-info{
+	float: left;
+	line-height: 18px;
+}
+#login .nav_r .s-dropdown .d .dropdown-code .code-info h2{
+	font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 2px;
+}
+#login .nav_r .s-dropdown .d .dropdown-code .code-info p{
+	color: #cb242b;
+    line-height: 16px;
+    font-size: 12px;
+}
+#login .nav_r .s-dropdown .d .dropdown-code .code-info span{
+	display: block;
+	width: 32px;
+	height: 32px;
+	float: left;
+	margin-top: 7px;
+}
+#login .nav_r .s-dropdown .d .dropdown-code .code-info .icon-andrid{
+	background: url(../images/icon5.png);
+	background-position: -484px 0;
+}
+#login .nav_r .s-dropdown .d .dropdown-code .code-info .icon-wechat{
+	background: url(../images/icon5.png);
+	background-position: -518px 0;
+}
+#login .nav_r .s-dropdown .d .dropdown-minicart{
+	display: none;
+	position: absolute;
+	right: 0;
+	top: 50px;
+	width: 460px;
+	background-color: white;	
+	border-radius: 0 0 10px 10px;
+	text-align: center;
+}
+#login .nav_r .s-dropdown .d .dropdown-minicart span{
+	display: block;
+	width: 100px;
+	height: 100px;
+	background: url(../images/icon5.png);
+	background-position: 0 -166px;
+	margin: 0 auto;
+    margin-bottom: 16px;
+    margin-top: 20px;
+}
+#login .nav_r .s-dropdown .d .dropdown-minicart p{
+	font-size: 14px;
+    color: #a4a4a4;
+}
+#login .nav_r .s-dropdown .d .dropdown-minicart a{
+	width: 148px;
+    height: 38px;
+    line-height: 38px;
+    display: block;
+    margin: 0 auto;
+    
+    border-radius: 2px;
+    border: 1px solid #a4a4a4;
+    color: #3a3a3a;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+#login .nav_r .s-dropdown .d .dropdown-minicart a:hover{
+	border-color: #ca141d;
+	color: #ca141d;
+}
+/*--------------------导航栏结束------------------------------*/
 #search {
 	height: 93px;
 	background-color: blanchedalmond;
