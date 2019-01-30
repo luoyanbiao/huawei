@@ -286,15 +286,118 @@
 	height: 945px;
 	background-color: cornflowerblue;
 }
-
+/* ----------------------------computer部分------------------------------------------- */
 #computer {
-	height: 1137px;
-	background-color: aliceblue;
+	height: 1062px;
+    background-color: aliceblue;
+    padding-top: 75px;
+}
+.computer-top{
+    margin-bottom: 22px;
+    position: relative;
+    text-align: center;
+ }
+ 
+ .computer-top .small{
+     width:30px;
+     height:5px;
+     background-color:#990000;
+     margin: 0 auto; 
+     
+     margin-bottom:13px; 
+   
+ }
+ .computer-top h3 {
+     font-size: 36px;
+     color: #3a3a3a;
+     margin-bottom: 24px;
+     cursor: pointer;
+ }
+ .computer-top h3:hover{
+     color: #990000;
+ }
+ .computer-top a{
+     color: #717171;
+     margin: 0 25px;
+     line-height: 35px;
+     text-decoration: none;
+     font-size: 17px;
+ }
+ .computer-top a:last-of-type{
+     position: absolute; 
+     display: inline-block;
+     width: 83px;
+     height: 35px;
+     line-height: 35px;
+     border: 1px solid #b2b2b2;
+     right: 197px;
+ }
+ .computer-top a:last-of-type i{
+     display: block;
+     width: 0px;
+     height: 0px;
+     border: 7px solid #b2b2b2;
+     border-color: transparent #b2b2b2 transparent #b2b2b2;
+     border-right: 0;
+     position: absolute;
+     top: 11px;
+     right: 10px;
+ } 
+ .computer-top a:hover{
+     color: #990000;
+     border-color: #990000;
+ }
+ .computer-top a:hover i {
+     border-left-color: #990000;
+ }
+ .computer-left{
+     float: left;
+     margin-left: 10px;
+ }
+ .computer-right{
+     float: left;
+ }
+ .computer-right ul a {border: 1px solid #cccccc;
+                       display: inline-block;
+                       width: 500px;
+                       height: 542px;}
+.computer-right .X-pro{
+    position: relative;
+    color: #fff;
+    
+}
+.computer-right .matebook{
+    position: absolute;
+    width: 425px;
+    height: 267px;
+    top: -359px;
+    right: 0;
+    padding-left: 75px;
+    padding-top: 104px;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.matebook h4{
+    font-size: 24px;
+    margin-bottom: 23px;
+}
+.matebook p{
+     font-size: 18px;
+}
+.matebook .small{
+    width:30px;
+    height:3px;
+    background-color:#fff;
+    margin:37px 0 25px 0;
+}
+
+.X-pro:hover .matebook{
+       background: #a92f2f;
 }
 
 /*---------------------------------------- watch部分 ---------------------------------------------------*/
 #watch {
-    height: 945px;
+    height: 870px;
     background-color: rgb(218, 236, 152);
   
 }
