@@ -1125,9 +1125,51 @@
 	display: block;
 	margin-top: 20px;
 }
+/* -------------------------------------------------------------footer部分--------------------------------------------------------------------------------------- */
 
 #footer {
 	margin-top: 75px;
 	height: 520px;
 	background-color: #f9f9f9;
+  
+}
+#footer ul{
+	display: flex;
+	justify-content:space-around;
+	line-height: 103px;
+}
+#footer li{
+	float: left;
+	
+	
+}
+.f-top{
+	height: 103px;
+	border-bottom: 1px solid #e5e5e5;
+
+}
+.f-top .icon01{
+	display: inline-block;
+	width: 46px;
+	height: 46px;
+	background: url(../images/icon4.png)no-repeat  0 -151px;
+	
+}
+.f-top .icon02{
+	display: inline-block;
+	width: 46px;
+	height: 46px;
+    background: url(../images/icon4.png)no-repeat  -47px -151px;
+}
+.f-top .icon03{
+	display: inline-block;
+	width: 46px;
+	height: 46px;
+    background: url(../images/icon4.png)no-repeat  -94px -151px;
+}
+.f-top .icon04{
+	display: inline-block;
+	width: 46px;
+	height: 46px;
+    background: url(../images/icon4.png)no-repeat  -141px -151px;
 }
