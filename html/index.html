@@ -9,6 +9,7 @@
 	<link rel="stylesheet" type="text/css" href="../css/reset.css" />
 	<link rel="stylesheet" type="text/css" href="../font_1034488_30nmt5qpo2a/iconfont.css" />
 	<link rel="stylesheet" type="text/css" href="../css/huawei.css" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.2/css/swiper.min.css">
 
 	<head>
 		<meta charset="UTF-8">
@@ -208,7 +209,23 @@
 		</div>
 	</nav>
 	<nav id="search" class="container"> 余雁彬负责负责搜索查找导航栏二</nav>
-	<section id="banner" class="container">王鑫负责大图片展示</section>
+	<section id="banner" class="container">
+			<div class="swiper-container swiper-container-horizontal">
+					<div class="swiper-wrapper" style="transition-duration: 0ms; transform: translate3d(0px, 0px, 0px);">
+					  <div class="swiper-slide swiper-slide-active" style="width: 1920px;"><img src="../images/img05.jpg"/></div>
+					  <div class="swiper-slide swiper-slide-next" style="width: 1920px;"><img src="../images/img02.jpg"/></div>
+					  <div class="swiper-slide" style="width: 1920px;"><img src="../images/img60.jpg"/></div>
+					  <div class="swiper-slide" style="width: 1920px;"><img src="../images/img61.jpg"/></div>
+					  <div class="swiper-slide" style="width: 1920px;"><img src="../images/img67.jpg"/></div>
+					  <div class="swiper-slide" style="width: 1920px;"><img src="../images/img69.jpg"/></div>
+					  <div class="swiper-slide" style="width: 1920px;"><img src="../images/img70.jpg"/></div>
+					  <div class="swiper-slide" style="width: 1920px;"><img src="../images/img82.jpg"/></div>
+					 
+					</div>
+					<!-- Add Pagination -->
+					<div class="swiper-pagination swiper-pagination-bullets"><span class="swiper-pagination-bullet swiper-pagination-bullet-active"></span><span class="swiper-pagination-bullet"></span><span class="swiper-pagination-bullet"></span><span class="swiper-pagination-bullet"></span><span class="swiper-pagination-bullet"></span><span class="swiper-pagination-bullet"></span><span class="swiper-pagination-bullet"></span><span class="swiper-pagination-bullet"></span><span class="swiper-pagination-bullet"></span><span class="swiper-pagination-bullet"></span></div>
+				  <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span></div>
+	</section>
 	<!--图片没有加宽度和居中，需要自己设置--，但是已经设置了overflow:hidden>-->
 	<section id="supremacy" class="container"> 余雁彬负责手机精品</section>
 	<section id="iphone" class="container">
@@ -617,6 +634,21 @@
 
 </body>
 <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.2/js/swiper.min.js"></script>
 <script src="../js/yyb.js"></script>
+<script src="../dist/js/swiper.min.js"></script>
+
+	  <script>
+		var swiper = new Swiper('.swiper-container', {
+			loop:true,
+			autoplay:true,
+		  spaceBetween: 30,
+		  pagination: {
+			el: '.swiper-pagination',
+			clickable: true,
+		  },
+		});
+	  </script>
 
 </html>
