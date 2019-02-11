@@ -478,6 +478,9 @@
 
 	</section>
 	<section id="show01">
+		
+			<div class="swiper-button-next" tabindex="0" role="button" aria-label="Next slide" aria-disabled="false"></div>
+			<div class="swiper-button-prev" tabindex="0" role="button" aria-label="Previous slide" aria-disabled="false"></div>
 		<ul class="show01-a">
 			<li>
 				<div class="red"></div><a href="#"><img src="../images/img24.png" /></a>
@@ -521,8 +524,7 @@
 			</li>
 
 		</ul>
-		<div class="icon1"></div>
-		<div class="icon2"></div>
+		
 	</section>
 	<section id="parts" class="container">
 		<div class="parts-small"></div>
@@ -555,7 +557,10 @@
 		</div>
 	</section>
 	<section id="show02" class="container">
+			<div class="swiper-button-next" tabindex="0" role="button" aria-label="Next slide" aria-disabled="false"></div>
+			<div class="swiper-button-prev" tabindex="0" role="button" aria-label="Previous slide" aria-disabled="false"></div>
 		<ul class="show02-a">
+			
 			<li>
 				<div class="red"></div><a href="#"><img src="../images/img52.jpg" /></a>
 				<p>华为三脚架自拍杆</p><i>￥799</i>
@@ -598,8 +603,7 @@
 			</li>
 
 		</ul>
-		<div class="icon1"></div>
-		<div class="icon2"></div>
+		
 	</section>
 
 	<footer id="footer" class="container">
@@ -649,6 +653,26 @@
 			clickable: true,
 		  },
 		});
+
 	  </script>
+	  
+	  <script>
+			var show = new Swiper('#show01', {
+			  navigation: {
+				nextEl: '.swiper-button-next',
+				prevEl: '.swiper-button-prev',
+			  },
+			});
+	</script>
+	<script>
+			var show = new Swiper('#show02', {
+			  navigation: {
+				nextEl: '.swiper-button-next',
+				prevEl: '.swiper-button-prev',
+			  },
+			});
+	</script>
 
 </html>
+
+
