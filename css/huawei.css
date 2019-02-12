@@ -1173,27 +1173,6 @@
 	width: 3500px;
 	height: 320px;
 }
-
-#show01 .icon1 {
-	position: absolute;
-	z-index: 1;
-	background-color: #990000;
-	width: 26px;
-	height: 70px;
-	left: 0;
-	top: 125px;
-}
-
-#show01 .icon2 {
-	position: absolute;
-	z-index: 1;
-	background-color: crimson;
-	width: 26px;
-	height: 70px;
-	right: 0;
-	top: 125px;
-}
-
 #show01 .show01-a .red {
 	background: #990000;
 }
