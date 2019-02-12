@@ -9,7 +9,9 @@
 	<link rel="stylesheet" type="text/css" href="../css/reset.css" />
 	<link rel="stylesheet" type="text/css" href="../font_1034488_30nmt5qpo2a/iconfont.css" />
 	<link rel="stylesheet" type="text/css" href="../css/huawei.css" />
+	<link rel="stylesheet" type="text/css" href="../css/login.css" />
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.2/css/swiper.min.css">
+	<link rel="stylesheet" type="text/css" href="../font_1041145_nsg7si5tno/iconfont.css" />
 
 	<head>
 		<meta charset="UTF-8">
@@ -67,7 +69,7 @@
 		<div class="nav_r">
 			<ul>
 				<li class="li1">
-					<a href="#login-modal">请登陆</a>
+					<a href="javascript:void(0)" class="user_login" >请登陆</a>
 					<a href="">注册</a>
 				</li>
 				<li>
@@ -721,7 +723,55 @@
 		<div class="f-bottom"></div>
 	</footer>
 
+	<!--    登录的弹窗-->
 
+	<div class="login-wrap">
+			<div id="header-wrap">
+			</div>
+			<nav id="login-wrap">
+				<span class="span01">
+					账号登录
+				</span>
+				<span class="span02">
+					扫码登录<img src="../images/img57.png" class="img01"/>
+				</span>
+			   
+				
+			</nav>
+			<p class="sys">使用华为移动服务APP扫一扫</p>
+		
+			<p class="sz"> 若您使用华为手机，请进入“设置”>“华为帐号”扫码登录。</p>
+			<form class="dl" method="POST" action="" autocomplete="off" onsubmit="$btn.onclick()">
+				<div class="form-group">
+						<p class="login_tip"></p>
+					<input type="text" class="form-control" id="username" name="username" placeholder="手机号/邮件地址/华为号"/>
+			   
+					<input type="password" class="form-control" id="password" name="password" placeholder="密码"/>
+			  
+					<a href="#" class="duanxin">短信登录注册</a>
+					<button class="btn" type="submit">
+						登录
+					</button>
+					
+						<input type="checkbox" class="checkbox"/>  <span class="span03">记住华为账号</span>
+						<a href="#" class="span04">更多</a>
+				 
+					<a href="#" class="zhuce">注册账号</a>
+					<a href="#" class="wj">忘记密码?</a>
+					<p class="qt">其它方式登录</p>
+					<div class="small02">
+						<a href="#" class="qq"><i class="iconfont icon-qq"></i></a>
+						<a href="#" class="zfb"><i class="iconfont icon-zhifubao"></i></a>
+						<a href="#" class="wx"><i class="iconfont icon-weixin"></i></a>
+					</div>
+					
+				</div>
+			  
+			</form>
+			<p class="fw">继续访问即代表您已同意<a href="#">华为商城服务协议</a>和<a href="#">华为隐私政策</a></p>
+		</div>
+
+	
 
 
 </body>
@@ -760,6 +810,97 @@
 			  },
 			});
 	</script>
+	<script>
+		$('.user_login').click( function() {
+		$('.login-wrap').show()
+	})
+
+			var $form = document.querySelector('.dl')
+			var $user = $form['username'];
+			var $pAll = $form.querySelectorAll('p');
+			var $password = $form['password'];
+			var $btn = document.querySelector('.btn')
+			var $span01 = document.querySelector('.span01')
+			var $span02 = document.querySelector('.span02')
+			var $img01 = document.querySelector('.img01')
+			var $sys = document.querySelector('.sys')
+			var $sz = document.querySelector('.sz')
+			/*$user.onblur = function(){
+				var $p = this.nextElementSibling
+				if(this.value == ''){
+					$p.innerHTML ='请输入您的账号';
+					$p.className = 'bg-danger';
+					return;
+				}
+				
+			}
+			$password.onblur = function () {
+				var $p = this.nextElementSibling;
+				if (this.value == '') {
+					$p.innerHTML = '请您输入密码';
+					$p.className = 'bg-danger';
+					return;
+				}
+			  
+			}*/
+			/*$img01.onmouseenter =function(){
+				
+			}*/
+		
+		 
+			$span02.onclick = function () {
+				$form.style.display ="none"
+				$img01.style.display="block"
+				$sys.style.display="block"
+				$sz.style.display="block"
+			}
+			$span01.onclick = function(){
+				$form.style.display ="block"
+				$img01.style.display="none"
+				$sys.style.display="none"
+				$sz.style.display="none"
+			}
+			/*$btn.onclick = function () {
+			   if($user.value ==''){
+				$p.innerHTML ='请输入您的账号';
+				$p.className = 'bg-danger';
+				return;
+			   }else if ($password.value == '') {
+					$p.innerHTML = '请您输入密码';
+					$p.className = 'bg-danger';
+					return;
+				}
+					if ($pAll[a].className == 'bg-danger') {
+						$pAll[a].previousElementSibling.focus();
+						return false;
+
+				}
+				return true;
+			}*/
+			$('#username').blur(function(){
+		if($('#username').val() && $('#username').val().length>0){
+			if($('#username').val().length < 4){
+				$('.login_tip').text(' * 华为帐号限制在4~50 个字符').show()
+			}else{
+				$('.login_tip').text('').hide()
+			}
+		}
+	})
+	$('.btn').click(function(){
+		if($('#username').val().length < 4 && $('#username').val() && $('#username').val().length>0){
+			$('.login_tip').text(' * 华为帐号限制在4~50 个字符').show()
+				return
+		}else if(!$('#username').val()){
+			$('.login_tip').text('请输入您的帐号').show()
+			return
+		}else if(!$('#password').val()){
+			$('.login_tip').text('请输入您的密码').show()
+			return
+		}else{
+			$('.login_tip').text().hide()
+		}
+	})
+		</script>
 
 </html>
 
