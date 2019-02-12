@@ -329,6 +329,7 @@
 
 #search .layout {
 	padding-top: 18px;
+	position: relative;
 }
 
 #search .layout .left {
@@ -434,7 +435,73 @@
     color: #353535;
     font-size: 20px;
 }
-
+#search .layout .left .nav-sub{
+	z-index: 10;
+    position: absolute;
+    left: 0;
+    top: 70px;
+    min-width: 100%;
+    overflow: hidden;
+    border-top: 1px solid #ebebeb;
+    background: #fff;
+    -webkit-box-shadow: 0 3px 3px 0 rgba(121,121,121,0.26);
+    -moz-box-shadow: 0 3px 3px 0 rgba(121,121,121,0.26);
+    box-shadow: 0 3px 3px 0 rgba(121,121,121,0.26);
+}
+#search .layout .left .nav-sub .naver-sub-wrap{
+	width: 1524px;
+    margin: 0 auto;
+    overflow: hidden;
+    background-color: #fff;
+}
+.nav-sub .naver-sub-wrap .p-title{
+	width: 1176px;
+    font-size: 14px;
+    line-height: 30px;
+    padding: 5px 12px 0 0;
+}
+.nav-sub .naver-sub-wrap .p-title .f1{
+	float: left;
+}
+.nav-sub .naver-sub-wrap .p-title .a1{
+	max-width: 200px;
+    margin-right: 3px;
+}
+.p-title a{
+	font-size: 16px;
+}
+.nav-sub .naver-sub-wrap .p-title .a1 i{
+	margin-left: 25px;
+}
+.nav-sub .naver-sub-wrap .p-title .a1 a{
+    color: #3a3a3a;
+}
+.nav-sub .naver-sub-wrap .p-title .a2 a{
+	padding: 0 15px;
+    color: #717171;
+}
+.nav-sub .naver-sub-wrap .grid-items{
+	margin: 0;
+    width: 190px;
+    height: 236px;
+    margin-right: 32px;
+    margin-left: 32px;
+    float: left;
+}
+.nav-sub .naver-sub-wrap .grid-items .thumb{
+	display: inline-block;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+.nav-sub .naver-sub-wrap .grid-items .thumb p:last-of-type{
+	color: red;
+}
+.nav-sub .naver-sub-wrap .grid-items img{
+	width: 130px;
+    height: 130px;
+    margin: 25px auto 0;
+}
 /*--------------------导航栏二结束----------------------------*/
 
 #banner {
