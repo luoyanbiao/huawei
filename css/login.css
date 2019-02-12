@@ -25,9 +25,16 @@
     width: 500px;
     height: 30px;
     background-color: brown;
-    margin-top: 20px;
+    position: relative;
+  
   
  
+}
+#header-wrap .over{
+    right: 0;
+    background-color: brown;
+    position: absolute;
+    border: none;
 }
 #login-wrap{
    

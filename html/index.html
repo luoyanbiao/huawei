@@ -727,6 +727,7 @@
 
 	<div class="login-wrap">
 			<div id="header-wrap">
+				<button class="over">关闭</button>
 			</div>
 			<nav id="login-wrap">
 				<span class="span01">
@@ -814,7 +815,9 @@
 		$('.user_login').click( function() {
 		$('.login-wrap').show()
 	})
-
+	
+	var $login = document.querySelector('.login-wrap')
+			var $over =document.querySelector('.over')
 			var $form = document.querySelector('.dl')
 			var $user = $form['username'];
 			var $pAll = $form.querySelectorAll('p');
@@ -847,7 +850,9 @@
 				
 			}*/
 		
-		 
+			 $over.onclick=function(){
+				$login.style.display ="none"
+			 }
 			$span02.onclick = function () {
 				$form.style.display ="none"
 				$img01.style.display="block"
