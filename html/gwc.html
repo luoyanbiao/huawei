@@ -255,9 +255,49 @@
         </form>
         <p class="fw">继续访问即代表您已同意<a href="#">华为商城服务协议</a>和<a href="#">华为隐私政策</a></p>
     </div>
+    <div id="showbox">
+        <img src="../images/huawei1.jpg" width="78" height="78" />
+        <img src="../images/huawei2.png" width="78" height="78" />
+        <img src="../images/huawei3.jpg" width="78" height="78" />
+        <img src="../images/huawei4..jpg" width="78" height="78" />
+        <img src="../images/huawei5.jpg" width="78" height="78" />
+        <img src="../images/huawei6.jpg" width="78" height="78" />
+        
+      </div><!--展示图片盒子-->
+      <div id="showsum"></div><!--展示图片里边-->
+      <p class="showpage">
+        <a href="javascript:void(0);" id="showlast"> < </a>
+        <a href="javascript:void(0);" id="shownext"> > </a>
+      </p>
+      
+      </div>
 </body>
 
 </html>
 <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.js"></script>
 <script src="../js/yyb.js"></script>
 <script src="../js/login.js"></script>
+<script src="js/jquery-1.9.1.min.js"></script>
+<script src="../js/common.js"></script>
+
+<link href="../css/gwc.css" rel="stylesheet" type="text/css" />
+
+<script type="text/javascript">
+  $(document).ready(function(){
+	  var showproduct = {
+		  "boxid":"showbox",
+		  "sumid":"showsum",
+		  "boxw":400,//宽度,该版本中请把宽高填写成一样
+		  "boxh":400,//高度,该版本中请把宽高填写成一样
+		  "sumw":60,//列表每个宽度,该版本中请把宽高填写成一样
+		  "sumh":60,//列表每个高度,该版本中请把宽高填写成一样
+		  "sumi":7,//列表间隔
+		  "sums":5,//列表显示个数
+		  "sumsel":"sel",
+		  "sumborder":1,//列表边框，没有边框填写0，边框在css中修改
+		  "lastid":"showlast",
+		  "nextid":"shownext"
+		  };//参数定义	  
+	 $.ljsGlasses.pcGlasses(showproduct);//方法调用，务必在加载完后执行
+  });
+</script>
