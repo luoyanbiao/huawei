@@ -1240,7 +1240,7 @@
 }
 
 #show01 {
-	width: 1480px;
+	width: 1350px;
 	height: 320px;
 	margin: 0 auto;
 	margin-top: 15px;
@@ -1248,9 +1248,17 @@
 	position: relative;
 	border-right: #eaeaea 1px solid;
 }
+#show01 .swiper-button-next{
+	background-image: none;
+	font-size: 24px;
+}
+#show01 .swiper-button-prev{
+	background-image: none;
+	font-size: 24px;
+}
 
 #show01 .show01-a {
-	width: 3500px;
+	width: 1500px;
 	height: 320px;
 }
 #show01 .show01-a .red {
@@ -1375,7 +1383,7 @@
 }
 
 #show02 {
-	width: 1480px;
+	width: 1350px;
 	height: 320px;
 	margin: 0 auto;
 	margin-top: 15px;
@@ -1383,29 +1391,16 @@
 	position: relative;
 	border-right: #eaeaea 1px solid;
 }
-
-#show02 .icon1 {
-	position: absolute;
-	z-index: 1;
-	background-color: #990000;
-	width: 26px;
-	height: 70px;
-	left: 0;
-	top: 125px;
+#show02 .swiper-button-next{
+	background-image: none;
+	font-size: 24px;
 }
-
-#show02 .icon2 {
-	position: absolute;
-	z-index: 1;
-	background-color: crimson;
-	width: 26px;
-	height: 70px;
-	right: 0;
-	top: 125px;
+#show02 .swiper-button-prev{
+	background-image: none;
+	font-size: 24px;
 }
-
 #show02 .show02-a {
-	width: 3500px;
+	width: 1500px;
 	height: 320px;
 }
 
@@ -1516,7 +1511,6 @@
 }
 .f-item{
 	width: 1150px;
-
 	float: left;
 	padding-top: 49px;
 }
@@ -1538,16 +1532,34 @@
 .f-item dl dd a:hover{
 	color: #990000;
 }
-.f-item .carousel i:nth-of-type(1){
-	font-size: 18px;
-}
-.f-item .carousel i:nth-of-type(2){
+
+.f-item .carousel{
 	position: relative;
-	top: -1px;
 }
-.f-item .carousel i{
+.f-item .carousel .carousel-box{
+
+	width: 150px;
+    overflow: hidden;
+}
+
+
+.f-item .carousel-box .icon-youjiantou{
 	font-size: 16px;
-	font-weight: bold;}
+	font-weight: bold;
+	position: absolute;
+	top: 4px;
+	right: 15px;
+	cursor: pointer;
+} 
+.f-item .carousel-box .icon-zuojiantou{
+	font-size: 16px;
+	font-weight: bold;
+	position: absolute;
+	font-size: 18px;
+	top: 2px;
+	right: 30px;
+	cursor: pointer;
+}
 .f-serve{
 	float: left;
 	height:200px;
