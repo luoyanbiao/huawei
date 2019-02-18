@@ -13,6 +13,7 @@ var iphone = (function(){
             $(".load").click(function(){
               $(".show-time").show();
             });
+         
             var $repair =document.querySelector('.repair')
             var $drop =document.querySelector('.drop')
             var $drop1 =document.querySelector('.drop-a')
