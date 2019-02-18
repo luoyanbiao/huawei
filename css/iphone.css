@@ -15,12 +15,17 @@
 	margin-left: 50px;
 	float: left;
 	margin-top: 10px;
+
 	
 }
+
 .shopping-guide{
   height: 30px;
+  padding-left: 10px;
   
 }
+
+
 
 /*相关样式*/
 #showbox { background:#eee;}
@@ -29,14 +34,14 @@
 #showsum span { border:1px solid #ddd;}/*小图片展示的边框*/
 #showsum span.sel { border:1px solid #f60;}/*小图片触发以后展示的边框*/
 
-.showpage { width:400px; position:relative;}/*小图片展示加上左右按钮的总框架*/
+.showpage { width:400px; position:relative;z-index: 1;}/*小图片展示加上左右按钮的总框架*/
 
 .showpage a { display:block; width:20px; border:1px solid #ddd; height:20px; line-height:20px; background:#eee; text-align:center; font-size:18px; position:relative; left:0; top:-39px; text-decoration:none; color:#999;border-radius: 50%;}
 /*通过修改 line-height:20px;可以调整箭头的高低
 top:-39px;可以调整圆圈按钮的高低
 */
 .showpage a#shownext { left:auto; right:0;position:absolute;}
-.showpage a:hover { background:#ccc; color:#777;}
+.showpage a:hover { background:#ccc; color:#777; }
 
 /* 放大镜右边的商品信息*/
 #information{
@@ -63,7 +68,7 @@ top:-39px;可以调整圆圈按钮的高低
 #information .price{
 	width:900px;
 	height: 90px;
-	background-color: darkgrey;
+	background-color: aliceblue;
 	margin-top: 20px;
 	padding-top: 10px;
 }
@@ -139,7 +144,7 @@ top:-39px;可以调整圆圈按钮的高低
 	border: 1px solid black;
 	line-height: 60px;
 	position: relative;
-	z-index: -1;
+
 
 }
 #information .select .showimg img{
@@ -163,7 +168,7 @@ top:-39px;可以调整圆圈按钮的高低
 	display: inline-block;
 	width: 230px;
 	height: 18px;
-	border: 1px solid red;
+	border: 1px solid black;
 	margin-left: 41px;
 	text-align: center;
 }
@@ -173,11 +178,14 @@ top:-39px;可以调整圆圈按钮的高低
 	margin-right: 40px;
 	margin-top: 20px;
 }
+#information .select .gray:hover{
+	border:solid 1px gray;
+}
 #information .select .select-c span{
 	display: inline-block;
 	width: 100px;
 	height: 24px;
-	border: 1px solid red;
+	border: 1px solid black;
 	margin-left: 41px;
 	text-align: center;
 	line-height: 24px;
@@ -188,7 +196,7 @@ top:-39px;可以调整圆圈按钮的高低
 	width: 120px;
 	height: 24px;
 	line-height: 24px;
-	border: 1px solid red;
+	border: 1px solid black;
 	margin-left: 10px;
 	text-align: center;
 }
@@ -203,21 +211,41 @@ top:-39px;可以调整圆圈按钮的高低
 	width: 166px;
 	height: 24px;
 	line-height: 24px;
-	border: 1px solid red;
+	border: 1px solid black;
 	margin-left: 44px;
 	text-align: center;
 	position: relative;
 	
 }
 #information .select .select-d .span1 .span-a{
-	display:none;
-	position: absolute;	
-	top:28px;	
+	display: none;
+	width: 166px;
+	height: 24px;
+	line-height: 24px;
+	text-align: center;
+	background-color: #fff;
+	z-index: 1;	
+	position: absolute;
+	border:1px solid black;
+	border-top: 1px solid white;
+	border-bottom: 1px solid white;
+	left: -1px;
+	
+	
 }
 #information .select .select-d .span1 .span-b{
-	display:none;
-	position: absolute;	
+	position: absolute;
+	display: none;
+	width: 166px;
+	height: 24px;
+	line-height: 24px;
+	text-align: center;	
 	top:51px;
+	z-index: 1;	
+	background-color: #fff;
+	border:1px solid black;
+	border-top: 1px solid white;
+	left: -1px;
 }
 
 #information .select .select-d .span2{
@@ -225,16 +253,20 @@ top:-39px;可以调整圆圈按钮的高低
 	width: 204px;
 	height: 24px;
 	line-height: 24px;
-	border: 1px solid red;
+	border: 1px solid black;
 	margin-left: 10px;
 	text-align: center;
 	position: relative;
 }
 #information .select .select-d .span2 .span-c{
+	width: 204px;
+	height: 24px;
 	display:none;
 	position: absolute;	
-	top:45px;
-	left: 24px;
+	z-index: 1;
+	left: -1px;
+	border:1px solid black;
+	border-top: 2px solid white;
 }
 #information .select .select-e{
 	color: black;
@@ -246,10 +278,13 @@ top:-39px;可以调整圆圈按钮的高低
 	display: inline-block;
 	width: 100px;
 	height: 24px;
-	border: 1px solid red;
+	border: 1px solid black;
 	margin-left: 41px;
 	text-align: center;
 	line-height: 24px;
+}
+#information .select .select-e .typeface:hover{
+	color: red;
 }
 #information .select .select-e a{
 	display: inline-block;
@@ -401,12 +436,12 @@ text-align: center;
 	right: 33px;
 	top:50px;
 }
-.swiper-button-next{
+.recommend-show  .swiper-button-next{
 	color: white;
 	font-size: 24px;
 	background-image: none;
 }
-.swiper-button-prev{
+.recommend-show  .swiper-button-prev{
 	color: white;
 	font-size: 24px;
 	background-image: none;
@@ -438,10 +473,20 @@ text-align: center;
 	margin-right: 50px;
 
 }
+.shop-details  .details-wrap .show-time{
+	display: none;
+}
 .shop-details .details-wrap img{
 	margin-left: 30px;
 	width: 1500px;
 	height: 760px;
+	position: relative;
+}
+.shop-details  .details-wrap .img02{
+	height: 716px;
+ width: 1820px;
+ position: relative;
+
 }
 .shop-details  .details-wrap .img03{
 	height: 900px;
@@ -458,6 +503,7 @@ text-align: center;
 	text-align: center;
 	top:3522px;
 	left: 691px;
+
 
 }
 .shop-details .details-wrap .img04{
@@ -512,12 +558,91 @@ text-align: center;
 	height: 490px;
 
 }
+.specification{
+	width: 1500px;
+	height: 500px;
+	position: relative;
+}
 .specification h4{
+	height: 40px;
 	color: black;
 	font-size: 20px;
 	margin-top: 40px;
-	margin-left: 40px;
+	margin-left: 44px;
+	border-bottom: 1px solid lightgray;
 }
+.specification .small-red{
+	display: inline-block;
+	width: 2px;
+	background-color: red;
+	height: 19px;
+	position: absolute;
+	left: 36px;
+	top:4px;
+}
+.specification .parameter{
+	padding-left: 200px;
+	padding-top: 50px;
+}
+.specification .parameter li{
+	font-size: 15px;
+	color: black;
+	margin-bottom: 10px;
+	position: relative;
+	
+	
+}
+.specification .parameter li label{
+		float: left;
+		width: 180px;
+
+}
+.specification h5{
+	color: black;
+	font-size: 20px;
+	margin-left: -115px;
+	margin-top: -20px;
+}
+.specification .parameter li label span{
+    float: left;
+    width: 900px;
+    margin-left: 20px;
+}
+.specification .subject{
+	background-color: lightgrey;
+	width: 1500px;
+	height: 500px;
+	padding-top: 50px;
+	padding-left: 50px;
+	
+}
+.specification .subject h5{
+	margin-left: 43px;
+	margin-top: 0;
+	display: inline-block;
+}
+.specification .subject ul{
+	font-size: 15px;
+	color: black;
+	margin-left: 149px;
+
+}
+.specification .subject li{
+	font-size: 15px;
+	color: black;
+	margin-bottom: 10px;
+	position: relative;
+	
+	
+}
+.specification .subject li label{
+		float: left;
+		width: 180px;
+
+}
+
+
+
 
 
 
