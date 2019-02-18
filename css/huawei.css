@@ -59,7 +59,7 @@
 }
 
 #login .nav_r .s-dropdown {
-	padding: 0 13px
+	padding: 0 10px
 }
 
 #login .hover {
@@ -124,6 +124,9 @@
 	top: 19px;
 	left: -3px;
 	background: #d3d3d3;
+}
+#login .nav_r .iconfont{
+	margin-right: 5px;
 }
 
 #login .nav_r .s-dropdown .d .dropdown-more {
@@ -372,10 +375,15 @@
 	margin-left: 20px;
 }
 
-#search .layout .left .nav ul>a {
+#search .layout .left .nav ul li{
+	float: left;
+}
+#search .layout .left .nav ul>li>a {
 	margin-right: 30px;
 	font-size: 20px;
 	color: black;
+	display: inline-block;
+	height: 55px;
 }
 
 #search .layout .left .nav ul>a:hover {
@@ -418,6 +426,7 @@
 	float: left;
 }
 #search .layout .rigth i{
+	position: absolute;
 	display: inline-block;
 	margin-top: 8px;
 }
@@ -435,7 +444,8 @@
     color: #353535;
     font-size: 20px;
 }
-#search .layout .left .nav-sub{
+/* #search .layout .left .nav-sub{
+	display: none;
 	z-index: 10;
     position: absolute;
     left: 0;
@@ -447,40 +457,44 @@
     -webkit-box-shadow: 0 3px 3px 0 rgba(121,121,121,0.26);
     -moz-box-shadow: 0 3px 3px 0 rgba(121,121,121,0.26);
     box-shadow: 0 3px 3px 0 rgba(121,121,121,0.26);
-}
-#search .layout .left .nav-sub .naver-sub-wrap{
+} */
+#search .left .nav .naver-sub-wrap{
+	display: none;
+	position: absolute;
 	width: 1524px;
-    margin: 0 auto;
-    overflow: hidden;
-    background-color: #fff;
+	margin: 0 auto;
+	top: 84px;
+	left: 0;
+	background-color: #fff;
+	z-index: 10;
 }
-.nav-sub .naver-sub-wrap .p-title{
+.nav .naver-sub-wrap .p-title{
 	width: 1176px;
     font-size: 14px;
     line-height: 30px;
-    padding: 5px 12px 0 0;
+    padding: 5px 200px 0 0;
 }
-.nav-sub .naver-sub-wrap .p-title .f1{
+.nav .naver-sub-wrap .p-title .f1{
 	float: left;
 }
-.nav-sub .naver-sub-wrap .p-title .a1{
+.nav .naver-sub-wrap .p-title .a1{
 	max-width: 200px;
     margin-right: 3px;
 }
 .p-title a{
 	font-size: 16px;
 }
-.nav-sub .naver-sub-wrap .p-title .a1 i{
+.nav .naver-sub-wrap .p-title .a1 i{
 	margin-left: 25px;
 }
-.nav-sub .naver-sub-wrap .p-title .a1 a{
+.nav .naver-sub-wrap .p-title .a1 a{
     color: #3a3a3a;
 }
-.nav-sub .naver-sub-wrap .p-title .a2 a{
+.nav .naver-sub-wrap .p-title .a2 a{
 	padding: 0 15px;
     color: #717171;
 }
-.nav-sub .naver-sub-wrap .grid-items{
+.nav .naver-sub-wrap .grid-items{
 	margin: 0;
     width: 190px;
     height: 236px;
@@ -488,16 +502,16 @@
     margin-left: 32px;
     float: left;
 }
-.nav-sub .naver-sub-wrap .grid-items .thumb{
+.nav .naver-sub-wrap .grid-items .thumb{
 	display: inline-block;
     width: 100%;
     height: 100%;
     text-align: center;
 }
-.nav-sub .naver-sub-wrap .grid-items .thumb p:last-of-type{
+.nav .naver-sub-wrap .grid-items .thumb p:last-of-type{
 	color: red;
 }
-.nav-sub .naver-sub-wrap .grid-items img{
+.nav .naver-sub-wrap .grid-items img{
 	width: 130px;
     height: 130px;
     margin: 25px auto 0;
@@ -1226,7 +1240,7 @@
 }
 
 #show01 {
-	width: 1480px;
+	width: 1350px;
 	height: 320px;
 	margin: 0 auto;
 	margin-top: 15px;
@@ -1234,9 +1248,17 @@
 	position: relative;
 	border-right: #eaeaea 1px solid;
 }
+#show01 .swiper-button-next{
+	background-image: none;
+	font-size: 24px;
+}
+#show01 .swiper-button-prev{
+	background-image: none;
+	font-size: 24px;
+}
 
 #show01 .show01-a {
-	width: 3500px;
+	width: 1500px;
 	height: 320px;
 }
 #show01 .show01-a .red {
@@ -1361,7 +1383,7 @@
 }
 
 #show02 {
-	width: 1480px;
+	width: 1350px;
 	height: 320px;
 	margin: 0 auto;
 	margin-top: 15px;
@@ -1369,29 +1391,16 @@
 	position: relative;
 	border-right: #eaeaea 1px solid;
 }
-
-#show02 .icon1 {
-	position: absolute;
-	z-index: 1;
-	background-color: #990000;
-	width: 26px;
-	height: 70px;
-	left: 0;
-	top: 125px;
+#show02 .swiper-button-next{
+	background-image: none;
+	font-size: 24px;
 }
-
-#show02 .icon2 {
-	position: absolute;
-	z-index: 1;
-	background-color: crimson;
-	width: 26px;
-	height: 70px;
-	right: 0;
-	top: 125px;
+#show02 .swiper-button-prev{
+	background-image: none;
+	font-size: 24px;
 }
-
 #show02 .show02-a {
-	width: 3500px;
+	width: 1500px;
 	height: 320px;
 }
 
@@ -1538,7 +1547,7 @@
 	font-size: 16px;
 	font-weight: bold;
 	position: absolute;
-	top: 3px;
+	top: 4px;
 	right: 15px;
 	cursor: pointer;
 } 
