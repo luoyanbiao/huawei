@@ -1,0 +1,204 @@
+*{
+    margin: 0;
+    padding: 0;
+    margin: 0 auto;
+}
+/*#login-modal{
+    width:100%;
+    height: 100%;
+    position: relative;
+    opacity: 1;
+    z-index: 9;
+    background-color: black;
+}*/
+.login-wrap{
+    width: 500px;
+    height: 606px;
+    position: fixed;
+    left: 30%;
+    top: 10%;
+    z-index: 10;
+    background-color:white;
+    display: none;
+}
+#header-wrap{
+    width: 500px;
+    height: 30px;
+    background-color: brown;
+    position: relative;
+  
+  
+ 
+}
+#header-wrap .over{
+    right: 0;
+    background-color: brown;
+    position: absolute;
+    border: none;
+}
+#login-wrap{
+   
+    width: 500px;
+    height: 30px;
+    font-size: 18px;
+
+}
+#login-wrap :hover{
+    color: brown;
+}
+#login-wrap .span01{
+    margin-top: 10px;
+    display: inline-block;
+    width: 249px;
+    height: 20px;
+    border-right: 1px solid black;
+    text-align: center;
+    float: left;
+    
+
+}
+#login-wrap .span02{
+    margin-top: 10px; 
+   display: inline-block;     
+    width: 249px;
+    height: 20px;
+    text-align: center;
+    float: left;
+
+}
+#login-wrap .span02 .img01 {
+    display: none;
+    margin-top: 100px;
+    right:41%;
+    position: absolute;
+}
+input{
+    outline: none;
+}     
+.bg-danger{
+  color: brown;
+  font-size: 12px;
+}
+.dl{
+    width: 500px;
+    height: 250px;
+    margin-top: 50px;
+}
+.dl .form-control{
+    width: 400px;
+    height: 30px;
+    margin-left: 50px;
+    border: none;
+    border-bottom: 1px solid rgb(241, 71, 71);
+    list-style: none;
+}
+.dl #password{
+    margin-top: 20px;
+}
+.dl .duanxin{
+    color: blue;
+    font-size: 8px;
+    display: inline-block;
+    margin-left: 50px;
+    margin-top: 20px;
+}
+.btn{
+    background-color: brown;
+    border: none;
+    border-radius: 20px;
+    width:400px;
+    height: 50px;
+    margin-left: 50px;
+    margin-top: 20px;
+    color: aliceblue;
+    font-size: 16px;
+}
+
+.checkbox{
+    width: 15px;
+    height: 15px;
+    display: inline-block;
+    margin-left: 50px;
+    margin-top: 20px;            
+}
+.span03{
+font-size: 12px;
+display: inline-block;
+}
+.span04{
+display:inline-block;
+color: blue;
+font-size: 12px;
+margin-left: 277px;
+text-decoration: none;
+
+}
+.zhuce{
+width: 60px;
+display: inline-block;
+color: blue;
+font-size: 12px;
+margin-top: 20px;
+margin-left: 190px;
+border-right:solid 1px black;
+text-decoration: none;
+
+}
+.wj{
+display: inline-block;
+color: blue;
+font-size: 12px;
+margin-top: 20px;
+text-decoration: none;
+}
+.qt{
+    font-size: 12px;
+    color: darkgray;
+    text-align: center;
+    margin-top: 60px;
+}
+.small02{
+    margin-left: 175px;
+    margin-top: 20px;
+}
+ .iconfont {
+    display:inline-block;
+    font-size: 30px;
+    margin-right: 20px;
+ 
+    
+}
+ .icon-qq:hover{
+    color: blue;
+   
+}
+ .icon-zhifubao:hover{
+   color: blue;
+}
+ .icon-weixin:hover{
+    color:greenyellow;
+
+}
+.fw{
+   
+    font-size: 12px;
+    color: darkgray;
+    margin-top: 180px;
+    text-align: center;
+}
+.fw a{
+    color: blue;
+}
+.sys{
+    display: none;
+    font-size: 12px;
+    margin-top: 240px;
+    text-align: center;
+}
+.sz{
+    display: none;
+    margin-top: 20px;
+    font-size: 12px;
+    text-align: center;
+}
+

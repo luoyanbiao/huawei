@@ -59,7 +59,7 @@
 }
 
 #login .nav_r .s-dropdown {
-	padding: 0 13px
+	padding: 0 10px
 }
 
 #login .hover {
@@ -124,6 +124,9 @@
 	top: 19px;
 	left: -3px;
 	background: #d3d3d3;
+}
+#login .nav_r .iconfont{
+	margin-right: 5px;
 }
 
 #login .nav_r .s-dropdown .d .dropdown-more {
@@ -423,6 +426,7 @@
 	float: left;
 }
 #search .layout .rigth i{
+	position: relative;
 	display: inline-block;
 	margin-top: 8px;
 }
