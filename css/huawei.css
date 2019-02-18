@@ -426,7 +426,7 @@
 	float: left;
 }
 #search .layout .rigth i{
-	position: relative;
+	position: absolute;
 	display: inline-block;
 	margin-top: 8px;
 }
@@ -472,7 +472,7 @@
 	width: 1176px;
     font-size: 14px;
     line-height: 30px;
-    padding: 5px 12px 0 0;
+    padding: 5px 200px 0 0;
 }
 .nav .naver-sub-wrap .p-title .f1{
 	float: left;
