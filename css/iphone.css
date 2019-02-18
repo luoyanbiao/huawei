@@ -6,7 +6,7 @@
 .container {
 	margin: 0 auto;
 	/*overflow: hidden;*/
-	width: 1524px;
+	
 	/*text-align: center;*/
 }
 /* 商品展示放大镜效果的区域*/
@@ -19,7 +19,7 @@
 }
 .shopping-guide{
   height: 30px;
-  background-color: greenyellow;
+  
 }
 
 /*相关样式*/
@@ -273,27 +273,27 @@ top:-39px;可以调整圆圈按钮的高低
 	color: red;
  
 }
-#information .select form{
+#information .select .buy{
 	margin-top: 10px;	
-	
+	position: relative;
 }
 #information .select  .buy-a{
 	width:60px;
 	height: 40px;
-	position: relative;
+	
 }
 #information .select .buy-b{
 	width: 20px;
 	height: 20px;
 	position: absolute;
-	right: 926px;
+	right: 836px;
 }
 #information .select .buy-c{
 	width: 20px;
 	height: 20px;
 	position: absolute;
-	right: 926px;
-	top:830px;
+	right: 836px;
+	top:24px;
 
 }
 
