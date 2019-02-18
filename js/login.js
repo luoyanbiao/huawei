@@ -7,6 +7,12 @@ var login = (function(){
             $('.user_login').click( function() {
                 $('.login-wrap').show()
             })
+            $(".img01").mouseenter(function(){
+                $(".img01").animate({left:'30px'})
+            })
+            $(".img01").mouseleave(function(){
+                $(".img01").animate({left:'200px'})
+            })
             
             var $login = document.querySelector('.login-wrap')
                     var $over =document.querySelector('.over')
@@ -21,7 +27,7 @@ var login = (function(){
                     var $sys = document.querySelector('.sys')
                     var $sz = document.querySelector('.sz')
                    
-                
+               
                      $over.onclick=function(){
                         $login.style.display ="none"
                      }

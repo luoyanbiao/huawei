@@ -9,7 +9,14 @@
 	width: 1524px;
 	/*text-align: center;*/
 }
+/* 商品展示放大镜效果的区域*/
 
+.fdj{
+	margin-left: 50px;
+	float: left;
+	margin-top: 10px;
+	
+}
 .shopping-guide{
   height: 30px;
   background-color: greenyellow;
@@ -17,12 +24,502 @@
 
 /*相关样式*/
 #showbox { background:#eee;}
-#showbox span { background:url(../images/whitebg.png) repeat;}
-#showsum { left:25px; margin-top:10px;}
-#showsum span { border:1px solid #ddd;}
-#showsum span.sel { border:1px solid #f60;}
+#showbox span { opacity: 0.1;background-color:white;border: 1px solid black;}/*放大镜的*/
+#showsum { left:25px; margin-top:10px;}/*小图片展示框和大图片展示框的距离*/
+#showsum span { border:1px solid #ddd;}/*小图片展示的边框*/
+#showsum span.sel { border:1px solid #f60;}/*小图片触发以后展示的边框*/
 
-.showpage { width:400px; position:relative;}
-.showpage a { display:block; width:15px; border:1px solid #ddd; height:60px; line-height:60px; background:#eee; text-align:center; font-size:18px; position:absolute; left:0; top:-62px; text-decoration:none; color:#999;}
-.showpage a#shownext { left:auto; right:0;}
+.showpage { width:400px; position:relative;}/*小图片展示加上左右按钮的总框架*/
+
+.showpage a { display:block; width:20px; border:1px solid #ddd; height:20px; line-height:20px; background:#eee; text-align:center; font-size:18px; position:relative; left:0; top:-39px; text-decoration:none; color:#999;border-radius: 50%;}
+/*通过修改 line-height:20px;可以调整箭头的高低
+top:-39px;可以调整圆圈按钮的高低
+*/
+.showpage a#shownext { left:auto; right:0;position:absolute;}
 .showpage a:hover { background:#ccc; color:#777;}
+
+/* 放大镜右边的商品信息*/
+#information{
+	margin-top: 10px;
+	margin-left: 80px;
+	display: block;
+	float: left;
+	width:900px;
+	height: 600px;
+	
+}
+#information .hua-phone{
+	color: black;
+}
+#information .hua-phone-a{
+	font-size: 14px;
+}
+#information .hua-phone-b{
+	color: red;
+	display: inline-block;
+	padding-top: 10px;
+	
+}
+#information .price{
+	width:900px;
+	height: 90px;
+	background-color: darkgrey;
+	margin-top: 20px;
+	padding-top: 10px;
+}
+
+#information .price .price-a{
+	font-size: 10px;
+	color: black;
+	margin-left: 5px;
+}
+#information .price .price-b{
+	color: red;
+	font-size: 20px;
+	margin-left: 20px;
+
+}
+#information .price .price-c{
+	font-size: 10px;
+	color: black;
+	margin-left: 5px;
+}
+#information .price .price-d{
+	color: red;
+	display: inline-block;
+	border: 1px solid red;
+	width: 60px;
+	height: 20px;
+	text-align: center;
+	margin-left: 20px;
+	line-height: 20px;
+	margin-right: 15px;
+}
+#information .price .price-e{
+	color: red;
+	display: inline-block;
+	border: 1px solid red;
+	width: 60px;
+	height: 20px;
+	text-align: center;
+	margin-left: 57px;
+	line-height: 20px;
+	margin-right: 19px;
+	margin-top: 8px;
+}
+#information .serve{
+	color: black;
+	font-size: 12px;
+	margin-top: 10px;
+}
+#information .coding{
+	margin-top: 5px;
+	color: black;
+	font-size: 12px;
+}
+/* 商品选择规格*/
+#information .select{
+	margin-top: 5px;
+	width: 900px;
+	border-top: 1px solid black;
+	
+}
+#information .select .select-a{
+	color: black;
+	font-size: 12px;
+	margin-right: 40px;
+}
+#information .select .showimg{
+	margin-top: 10px;
+	display: inline-block;
+	width: 100px;
+	height: 40px;
+	margin-right: 10px;
+	padding-top: 10px;
+	border: 1px solid black;
+	line-height: 60px;
+	position: relative;
+	z-index: -1;
+
+}
+#information .select .showimg img{
+	margin-top:-5px;
+	margin-left: 9px;
+}
+#information .select .showimg i{
+	
+	display: inline-block;
+	position: absolute;
+	top:-3px;
+
+}
+#information .select .select-b{
+	color: black;
+	font-size: 12px;
+	margin-right: 40px;
+	margin-top: 20px;
+}
+#information .select .select-b span{
+	display: inline-block;
+	width: 230px;
+	height: 18px;
+	border: 1px solid red;
+	margin-left: 41px;
+	text-align: center;
+}
+#information .select .select-c{
+	color: black;
+	font-size: 12px;
+	margin-right: 40px;
+	margin-top: 20px;
+}
+#information .select .select-c span{
+	display: inline-block;
+	width: 100px;
+	height: 24px;
+	border: 1px solid red;
+	margin-left: 41px;
+	text-align: center;
+	line-height: 24px;
+}
+
+#information .select .select-c .span1{
+	display: inline-block;
+	width: 120px;
+	height: 24px;
+	line-height: 24px;
+	border: 1px solid red;
+	margin-left: 10px;
+	text-align: center;
+}
+#information .select .select-d{
+	color: black;
+	font-size: 12px;
+	margin-right: 40px;
+	margin-top: 20px;
+}
+#information .select .select-d .span1{
+	display: inline-block;
+	width: 166px;
+	height: 24px;
+	line-height: 24px;
+	border: 1px solid red;
+	margin-left: 44px;
+	text-align: center;
+	position: relative;
+	
+}
+#information .select .select-d .span1 .span-a{
+	display:none;
+	position: absolute;	
+	top:28px;	
+}
+#information .select .select-d .span1 .span-b{
+	display:none;
+	position: absolute;	
+	top:51px;
+}
+
+#information .select .select-d .span2{
+	display: inline-block;
+	width: 204px;
+	height: 24px;
+	line-height: 24px;
+	border: 1px solid red;
+	margin-left: 10px;
+	text-align: center;
+	position: relative;
+}
+#information .select .select-d .span2 .span-c{
+	display:none;
+	position: absolute;	
+	top:45px;
+	left: 24px;
+}
+#information .select .select-e{
+	color: black;
+	font-size: 12px;
+	margin-right: 40px;
+	margin-top: 20px;
+}
+#information .select .select-e span{
+	display: inline-block;
+	width: 100px;
+	height: 24px;
+	border: 1px solid red;
+	margin-left: 41px;
+	text-align: center;
+	line-height: 24px;
+}
+#information .select .select-e a{
+	display: inline-block;
+	text-align: center;
+	height: 24px;
+	line-height: 24px;
+	background-color: lightgray;
+}
+#information .select .select-e-a{
+	width: 100px;
+	margin-left: 64px;
+}
+#information .select .select-e-b{
+	width: 120px;
+}
+#information .select .select-e-c{
+	width: 160px;
+}
+#information .select .select-e i{
+	margin-left:30px;
+	color: red;
+ 
+}
+#information .select form{
+	margin-top: 10px;	
+	
+}
+#information .select  .buy-a{
+	width:60px;
+	height: 40px;
+	position: relative;
+}
+#information .select .buy-b{
+	width: 20px;
+	height: 20px;
+	position: absolute;
+	right: 926px;
+}
+#information .select .buy-c{
+	width: 20px;
+	height: 20px;
+	position: absolute;
+	right: 926px;
+	top:830px;
+
+}
+
+#information .select .buy-d{
+	width: 154px;
+	height: 40px;
+	background-color: orange;
+	margin-left:26px; 
+	border: none;
+
+}
+#information .select .buy-e{
+	margin-left: 8px;
+	width: 154px;
+	height: 40px;
+	background-color: orange;
+	border: none;
+
+}
+.black{
+	border-bottom: 1px solid black;
+	height: 700px;
+}
+
+.recommend{
+	margin-left: 60px;
+	width: 1480px;
+	height: 220px;
+	border-bottom: 1px solid lightgray;
+	margin-top: 20px;
+	overflow: hidden;
+	position: relative;
+
+}
+.recommend h4{
+
+	color: red;
+	font-size: 20px;
+	width:100px;
+	text-align: center;
+
+}
+.recommend-show .show1 {
+	padding-top: 10px;
+	width: 138px;
+	height: 160px;
+
+	text-align: center;
+	float: left;
+}
+.recommend-show .show1 i{
+	color: red;
+	font-size: 12px;
+}
+
+.recommend-show .show1 span{
+	display:inline-block;
+		font-size: 12px;
+		color: black;
+
+}
+.recommend-show .addition{
+	float: left;
+	width: 20px;
+	height: 200px;
+	font-size: 50px;
+	margin-left: 30px;
+	
+	
+}
+.recommend-show .addition span{
+	line-height: 136px;
+}
+.recommend-show .show2{
+	margin-left: 40px;
+	float: left;
+	width: 1200px;
+	height: 200px;
+
+	
+
+}
+
+.recommend-show .show2 li{
+float: left;
+width: 160px;
+height: 200px;
+margin-left: 68px;
+margin-top: 10px;
+text-align: center;
+}
+.recommend-show .show2 a span{
+	display:inline-block;
+	font-size: 12px;
+	color: black;
+}
+.recommend-show .show2 a i{
+	color: red;
+	font-size: 12px;
+}
+.recommend-show  .left{
+	width: 20px;
+	height: 60px;
+	position: absolute;
+	right: 33px;
+	top:50px;
+}
+.swiper-button-next{
+	color: white;
+	font-size: 24px;
+	background-image: none;
+}
+.swiper-button-prev{
+	color: white;
+	font-size: 24px;
+	background-image: none;
+}
+.recommend-show  .right{
+	width: 20px;
+	height: 60px;
+	position: absolute;
+	left: 70px;
+	top:50px;
+}
+
+.shop-details{
+	width: 1480px;
+	height: 800px;
+}
+.shop-details .list{
+
+	width: 800px;
+	height: 40px;
+	text-align: center;
+	margin:0 auto;
+	margin-top: 30px;
+}
+.shop-details .list a {
+	color: lightgrey;
+	font-size: 20px;
+	display: inline-block;
+	margin-right: 50px;
+
+}
+.shop-details .details-wrap img{
+	margin-left: 30px;
+	width: 1500px;
+	height: 760px;
+}
+.shop-details  .details-wrap .img03{
+	height: 900px;
+	position: relative;
+
+}
+.shop-details  .details-wrap button{
+	position: absolute;
+	bottom: 0;
+	width: 180px;
+	height: 50px;
+	border: none;
+	background-color: lightgray;
+	text-align: center;
+	top:3522px;
+	left: 691px;
+
+}
+.shop-details .details-wrap .img04{
+	height: 1900px;
+
+}
+.shop-details  .details-wrap .img05{
+	height: 1600px;
+
+}
+.shop-details .details-wrap  .img06{
+	height:1300px;
+
+}
+.shop-details .details-wrap  .img07{
+	height: 1500px;
+
+}
+.shop-details .details-wrap .img08{
+	height: 1752px;
+
+}
+.shop-details .details-wrap .img09{
+	height: 869px;
+
+}
+.shop-details .details-wrap .img10{
+	height: 1400px;
+	
+
+}
+
+.shop-details .details-wrap .img11{
+	height: 1200px;
+
+}
+
+.shop-details .details-wrap .img12{
+	height: 905px;
+
+}
+.shop-details .details-wrap .img13{
+	height: 882px;
+
+}
+.shop-details .details-wrap .img14{
+	height: 452px;
+
+}
+
+.shop-details .details-wrap .img15{
+	height: 490px;
+
+}
+.specification h4{
+	color: black;
+	font-size: 20px;
+	margin-top: 40px;
+	margin-left: 40px;
+}
+
+
+
+
+
