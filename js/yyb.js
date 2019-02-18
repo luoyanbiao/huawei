@@ -70,6 +70,12 @@ var yyb = (function(){
                 // $('.nav-sub').css('display','none');
                 $('#naverSub01').slideUp();
             })
+            $('.text').on('focus', function(){
+                $('.search-bar-key').hide();
+            })
+            $('.text').on('blur', function(){
+                $('.search-bar-key').show();
+            })
         }
     }
 }());
