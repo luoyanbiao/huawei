@@ -486,12 +486,12 @@ text-align: center;
 	margin-left: 30px;
 	width: 1500px;
 	height: 760px;
-	position: relative;
+	
 }
 .shop-details  .details-wrap .img02{
 	height: 716px;
- width: 1820px;
- position: relative;
+ width: 1500px;
+
 
 }
 .shop-details  .details-wrap .img03{
@@ -646,7 +646,6 @@ text-align: center;
 		width: 180px;
 
 }
-
 
 
 
