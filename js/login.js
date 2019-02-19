@@ -53,7 +53,8 @@ var login = (function(){
                     }
                 }
             })
-            $('.btn').click(function(){
+            $('.btn').click(function(e){
+                e.preventDefault()
                 if($('#username').val().length < 4 && $('#username').val() && $('#username').val().length>0){
                     $('.login_tip').text(' * 华为帐号限制在4~50 个字符').show()
                         return
@@ -64,7 +65,7 @@ var login = (function(){
                     $('.login_tip').text('请输入您的密码').show()
                     return
                 }else{
-                    $('.login_tip').text().hide()
+                    $('.login_tip').text('').hide()
                 }
             })
         }

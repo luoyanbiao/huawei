@@ -103,6 +103,8 @@ input{
     margin-top: 20px;
 }
 .btn{
+  
+  
     background-color: brown;
     border: none;
     border-radius: 20px;
@@ -202,3 +204,11 @@ text-decoration: none;
     text-align: center;
 }
 
+.buy-shopping{
+    position: absolute;
+    border: 1px solid black;
+    text-align: center;
+    width: 200px;
+    height: 50px;
+
+}

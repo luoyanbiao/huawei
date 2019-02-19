@@ -65,9 +65,11 @@ jQuery.ljsGlasses = {
 			"height":_border+"px",
 			"width":_sumwidth+"px",
 			"position":"relative"
+			
 			});
 		_sumbox.css({
-			"width":_sumboxwidth+"px"
+			"width":_sumboxwidth+"px",
+			
 			});
 		_sumarr.css({
 			"float":"left",
@@ -76,11 +78,14 @@ jQuery.ljsGlasses = {
 			"height":_obj.sumh+"px",
 			"overflow":"hidden",
 			"position":"relative"
+			
 			});
 		_sumimg.css({
 			"max-width":"100%",
 			"max-height":"100%",
 			"position":"relative"
+			
+			
 			});
 		
 		_box.append("<div style='position:relative;'><b style='display:block;'><img style='display:block;' src='' /></b><span style='position:absolute;left:0;top:0;display:none;z-index:5;'></span></div><p style='position:absolute;overflow:hidden;top:0;display:none;'><img style='max-width:none;max-height:none;position:relative;left:0;top:0;' src='' /></p>");

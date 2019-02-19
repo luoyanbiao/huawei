@@ -404,6 +404,24 @@
 	border-radius: 15px;
 	position: relative;
 }
+#search .search-bar-form .menu{
+	width: 316px;
+	position: absolute;
+	left: 4px;
+	top:37px;
+	color:black;
+	font-size: 15px;
+	z-index: 5;
+	background-color: #fff;
+	border-radius: 5px;
+	box-shadow:2px 2px 2px   black;
+
+
+}
+#search .search-bar-form .menu li{
+	margin-top: 10px;
+	margin-left: 5px;
+}
 #search .layout .rigth .search-bar-key{
 	position: absolute;
     max-width: 260px;
