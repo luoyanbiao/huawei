@@ -771,7 +771,10 @@ top:-39px;可以调整圆圈按钮的高低
 }
 .mess-bottom ul .butn{
     width: 215px;
-    height: 57px;
+	height: 57px;
+	line-height: 57px;
+	display: inline-block;
+	text-align: center;
     background: #ca151d;
     border: none;
     border-radius: 4px;
