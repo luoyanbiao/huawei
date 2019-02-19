@@ -33,14 +33,20 @@
 #showsum { left:25px; margin-top:10px;}/*小图片展示框和大图片展示框的距离*/
 #showsum span { border:1px solid #ddd;}/*小图片展示的边框*/
 #showsum span.sel { border:1px solid #f60;}/*小图片触发以后展示的边框*/
+#showbox p{
+	z-index: 1;
+	margin-left: 20px;
+	border:1px solid black;
+	background-color: #fff;
 
-.showpage { width:400px; position:relative;z-index: 1;}/*小图片展示加上左右按钮的总框架*/
+}/*放大镜右边图片展示的盒子*/
+.showpage { width:400px; position:relative;z-index:1;}/*小图片展示加上左右按钮的总框架*/
 
 .showpage a { display:block; width:20px; border:1px solid #ddd; height:20px; line-height:20px; background:#eee; text-align:center; font-size:18px; position:relative; left:0; top:-39px; text-decoration:none; color:#999;border-radius: 50%;}
 /*通过修改 line-height:20px;可以调整箭头的高低
 top:-39px;可以调整圆圈按钮的高低
 */
-.showpage a#shownext { left:auto; right:0;position:absolute;}
+.showpage a#shownext { left:auto; right:0;position:absolute; }
 .showpage a:hover { background:#ccc; color:#777; }
 
 /* 放大镜右边的商品信息*/
@@ -640,6 +646,7 @@ text-align: center;
 		width: 180px;
 
 }
+
 
 
 
