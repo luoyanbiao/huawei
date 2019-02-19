@@ -278,3 +278,10 @@ select {
     color: rgb(153, 153, 153);
     padding: 0px 10px;
 }
+.error{
+	display: none;
+	color: red;
+}
+button{
+	outline: none;
+}

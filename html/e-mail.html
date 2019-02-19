@@ -57,10 +57,11 @@
                         <span class="select-text ar-eg">邮件地址</span>
                     </div>
                     <div class="l input-content">
-                        <input type="text" class="text" />
-                        <div class="text">请输入邮件地址</div>
+                        <input type="text" class="text e-mail" />
+                        <div class="text e-mail">请输入邮件地址</div>
                     </div>
                 </div>
+                <p class="mail-e error">对不起，您输入的电子邮箱错误</p>
                 <!-- 短信验证-->
                 <div class="input-container" id="errRandomCode-box">
                     <div class="l input-left">
@@ -70,8 +71,8 @@
                         <a href="">获取验证码</a>
                     </div>
                     <div class="input-content">
-                        <input type="text" class="verify vam ime-disabled text" />
-                        <div class="verify vam ime-disabled text">请输入邮件验证码</div>
+                        <input type="text" class="verify ime-disabled text" maxlength="8"/>
+                        <div class="verify ime-disabled text">请输入邮件验证码</div>
                     </div>
                 </div>
                 <!--设置密码-->
@@ -81,20 +82,21 @@
                             密码
                         </div>
                         <div class="input-content">
-                            <input type="text" class="pwd-input text" />
+                            <input type="password" class="pwd-input text" />
                             <div class="pwd-input text">请输密码</div>
                         </div>
                     </div>
+                    <p class="pwd-e error">至少8-16个字符，至少1个大写字母，1个小写字母和1个数字</p>
                     <div class="input-container" id="confirmpwdDiv">
                         <div class="l input-left">
                             确认密码
                         </div>
                         <div class="input-content">
-                            <input type="text" class="text vam" />
+                            <input type="password" class="text vam" />
                             <div class="text vam">请再次输密码</div>
                         </div>
                     </div>
-
+                    <p class="vam-e error">密码不一致</p>
                 </div>
                 <!--手机号码-->
                 <div class="set-phone">
@@ -103,10 +105,11 @@
                             <span class="select-text ar-eg">+86(中国)</span>
                         </div>
                         <div class="l input-content">
-                            <input type="text" class="text input-number" />
+                            <input type="text" class="text input-number" onkeyup="this.value=this.value.replace(/[^\d]/g,'') " onafterpaste="this.value=this.value.replace(/[^\d]/g,'') "/>
                             <div class="text input-number">请输入手机号</div>
                         </div>
                     </div>
+                    <p class="phone-e error">手机号不正确</p>
                     <!-- 短信验证-->
                     <div class="input-container" id="errRandomCode-box">
                         <div class="l input-left">
@@ -116,8 +119,8 @@
                             <a href="">获取验证码</a>
                         </div>
                         <div class="input-content">
-                            <input type="text" class="verify vam ime-disabled text" />
-                            <div class="verify vam ime-disabled text">请输入短信验证码</div>
+                            <input type="text" class="verify ime-disabled text" maxlength="8"/>
+                            <div class="verify ime-disabled text">请输入短信验证码</div>
                         </div>
                     </div>
                     <div class="reg-btn" id="red-btn">
@@ -142,6 +145,12 @@
             </div>
         </div>
     </div>
+
+
+    <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.js"></script>
+    <script src="../js/yyb.js"></script>
+
+
 </body>
 
 </html>
