@@ -1,3 +1,4 @@
+/*搜索框的js*/
 var baidu = (function () {
     var $search = document.querySelector('.text');
     var $menu = document.querySelector('.menu');

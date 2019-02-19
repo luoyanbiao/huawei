@@ -1,7 +1,7 @@
 /**
  * Created by Administrator on 2017/5/24.
  */
-
+/*商品结算js*/
 $(function () {
 
     //全局的checkbox选中和未选中的样式

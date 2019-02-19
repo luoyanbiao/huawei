@@ -1,3 +1,4 @@
+/*搜索框的数据js*/
 function sendJonp(url, data) {
     var $script = document.createElement('script');
     var flag = url.includes('?') ? "&" : "?";

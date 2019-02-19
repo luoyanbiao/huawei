@@ -1,3 +1,4 @@
+/*登录弹出框页面的js*/
 var login = (function(){
     return{
         init(){
