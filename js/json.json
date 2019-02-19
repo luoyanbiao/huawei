@@ -1,0 +1,27 @@
+
+{
+    "code": 200,
+    "data": [
+        {
+            "id": 1,    
+            "price": 3390,
+            "ps": "华为 HUAWEI nova 4 2000万超广角三摄 标配 全网通版（蜜语红·星耀版)"
+            
+        },
+        {
+            "id": 2,
+          
+            "price": 9988,
+            "ps": "（华为）HUAWEI MateBook X Pro 13.9英寸笔记本电脑 深空灰 i7 8GB 256GB 独显"
+         
+        },
+        {
+            "id": 3,
+           
+            "price": 6399,
+            "ps": "（华为）HUAWEI MateBook 13 全面屏轻薄性能本 皓月银 i7 8GB 512GB 独显"
+            
+        },
+    
+    ]
+}

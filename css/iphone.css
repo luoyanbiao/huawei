@@ -339,13 +339,20 @@ top:-39px;可以调整圆圈按钮的高低
 }
 
 #information .select .buy-d{
+
+	display: inline-block;
 	width: 154px;
 	height: 40px;
 	background-color: orange;
 	margin-left:26px; 
 	border: none;
+	color:black;
+	font-size:15px;
+	text-align: center;
+	line-height: 40px;
 
 }
+
 #information .select .buy-e{
 	margin-left: 8px;
 	width: 154px;

@@ -1,3 +1,4 @@
+/*手机详情展示页*/
 var iphone = (function(){
     return{
         init(){

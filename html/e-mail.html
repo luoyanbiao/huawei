@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/register.css">
+    <title>注册_华为账号</title>
+</head>
+
+<body class="reg themeName-red">
+    <div class="head-background">
+        <div class="head_center">
+            <div class="main-logo adHeadPicContainer" style="width:143px">
+                <img src="../images/head-top.png" alt="" class="wihteBgPic">
+            </div>
+            <div class="website-name">
+                <b style="font-size: 18px;margin-top: -5px;float: left;color:#cccccc;">|</b>
+                <b style="font-size: 18px;margin-top: -3px;float: left; margin-left:18px;">华为商城</b>
+            </div>
+        </div>
+    </div>
+    <div class="wp1 relative">
+        <div class="register-content">
+            <div class="reg-tab clearfix">
+                <a href="register.html" class="phone-wrap l">
+                    <i class="phone-icon"></i>
+                    <span class="tab-phone">手机号</span>
+                </a>
+                <a href="" class="mail-wrap l sel">
+                    <i class="mail-icon"></i>
+                    <span class="tab-email">电子邮箱</span>
+                </a>
+            </div>
+            <div class="login r">
+                已有华为账号
+                <a href="" title="登录" class="login-a">登录></a>
+            </div>
+            <div class="reg-detail">
+                <!--选择国家-->
+                <div class="input-container" id="chooseCountry">
+                    <div class="l input-left">
+                        国家/地区
+                    </div>
+                    <select name="">
+                        <option value="">中国</option>
+                        <option value="">中国</option>
+                        <option value="">中国</option>
+                        <option value="">还是中国</option>
+                    </select>
+                </div>
+                <!--手机号码-->
+                <div class="input-container">
+                    <div class="l input-left">
+                        <span class="select-text ar-eg">邮件地址</span>
+                    </div>
+                    <div class="l input-content">
+                        <input type="text" class="text e-mail" />
+                        <div class="text e-mail">请输入邮件地址</div>
+                    </div>
+                </div>
+                <p class="mail-e error">对不起，您输入的电子邮箱错误</p>
+                <!-- 短信验证-->
+                <div class="input-container" id="errRandomCode-box">
+                    <div class="l input-left">
+                        邮件验证码
+                    </div>
+                    <div class="r input-right">
+                        <a href="">获取验证码</a>
+                    </div>
+                    <div class="input-content">
+                        <input type="text" class="verify ime-disabled text" maxlength="8"/>
+                        <div class="verify ime-disabled text">请输入邮件验证码</div>
+                    </div>
+                </div>
+                <!--设置密码-->
+                <div class="set-password">
+                    <div class="input-container" id="pwdDiv">
+                        <div class="l input-left">
+                            密码
+                        </div>
+                        <div class="input-content">
+                            <input type="password" class="pwd-input text" />
+                            <div class="pwd-input text">请输密码</div>
+                        </div>
+                    </div>
+                    <p class="pwd-e error">至少8-16个字符，至少1个大写字母，1个小写字母和1个数字</p>
+                    <div class="input-container" id="confirmpwdDiv">
+                        <div class="l input-left">
+                            确认密码
+                        </div>
+                        <div class="input-content">
+                            <input type="password" class="text vam" />
+                            <div class="text vam">请再次输密码</div>
+                        </div>
+                    </div>
+                    <p class="vam-e error">密码不一致</p>
+                </div>
+                <!--手机号码-->
+                <div class="set-phone">
+                    <div class="input-container">
+                        <div class="l input-left">
+                            <span class="select-text ar-eg">+86(中国)</span>
+                        </div>
+                        <div class="l input-content">
+                            <input type="text" class="text input-number" onkeyup="this.value=this.value.replace(/[^\d]/g,'') " onafterpaste="this.value=this.value.replace(/[^\d]/g,'') "/>
+                            <div class="text input-number">请输入手机号</div>
+                        </div>
+                    </div>
+                    <p class="phone-e error">手机号不正确</p>
+                    <!-- 短信验证-->
+                    <div class="input-container" id="errRandomCode-box">
+                        <div class="l input-left">
+                            短信验证码
+                        </div>
+                        <div class="r input-right">
+                            <a href="">获取验证码</a>
+                        </div>
+                        <div class="input-content">
+                            <input type="text" class="verify ime-disabled text" maxlength="8"/>
+                            <div class="verify ime-disabled text">请输入短信验证码</div>
+                        </div>
+                    </div>
+                    <div class="reg-btn" id="red-btn">
+                        <button class="btn btn-reg sel">注册</button>
+                    </div>
+                </div>
+            </div>
+            <div class="box-shadow"></div>
+            <div class="wp1 ft">
+                <div class="reg-content">
+                    <p class="footer">
+                        <a href="">华为帐号用户协议</a>
+                        <em>|</em>
+                        <a href="">关于华为帐号与隐私的声明</a>
+                        <em>|</em>
+                        <a href="">常见问题</a>
+                    </p>
+                    <p class="footer">
+                        Copyright © 2011-2018 华为软件技术有限公司 版权所有 保留一切权利 苏B2-20070200号 | 苏ICP备09062682号-9
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.js"></script>
+    <script src="../js/yyb.js"></script>
+
+
+</body>
+
+</html>

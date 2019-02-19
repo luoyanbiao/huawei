@@ -1,3 +1,4 @@
+/*放大镜的js*/
 jQuery.ljsGlasses = {
     pcGlasses:function(_obj){
 		var _box = $("#"+_obj.boxid);
