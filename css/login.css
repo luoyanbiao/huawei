@@ -21,6 +21,12 @@
     background-color:white;
     display: none;
 }
+.login-wrap .login_tip{
+    color: red;
+    font-size: 12px;
+    margin-left: 20px;
+    margin-bottom: 10px;
+}
 #header-wrap{
     width: 500px;
     height: 30px;

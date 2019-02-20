@@ -15,7 +15,17 @@ var iphone = (function(){
               $(".show-time").show();
 
             });
-         
+            $(".buy-b").click(function(e){
+             e.preventDefault()
+                $("buy-a").val()+1
+              
+            })
+            $(".buy-c").click(function(e){
+                e.preventDefault()
+                   $("buy-a").val()-1
+                
+               })
+              
             
             var $repair =document.querySelector('.repair')
             var $drop =document.querySelector('.drop')
