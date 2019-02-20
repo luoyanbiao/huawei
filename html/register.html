@@ -127,7 +127,33 @@
 
     <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.js"></script>
     <script src="../js/yyb.js"></script>
+    <script src="../js/ajax.js"></script>
+    <script>
+        var $form = document.querySelector("#form");
+        var btn = document.querySelector('.btn');
+        btn.onclick = function (e) {
+            e = e || window.event;
+            e.preventDefault();
+            sendAjax('../admin/register.php', {
+                type: 'POST',
+                data: {
+                    phone: $form['phone'].value,
+                    ps: $form['ps'].value,
+                    pwd: $form['pwd'].value,
+                    pwdc: $form['pwdc'].value,
+                },
+                success(data) {
+                    let { code, msg } = JSON.parse(data);
+                    if (code == 200) {
+                     location.href  = 'index.html'
+                    } else {
+                        alert(msg);
+                    }
+                }
+            })
+        }
 
+    </script>
 
 
 
