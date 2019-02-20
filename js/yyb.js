@@ -9,6 +9,7 @@ var yyb = (function () {
     var $c4 = $('.c4');
     var $s5 = $('.s5');
     var $m5 = $('.m5');
+    var $inputAll = document.querySelectorAll('input');
     return {
         init() {
             this.event();
@@ -85,7 +86,7 @@ var yyb = (function () {
             $('.text').on('input', function () {
                 $(this).next().hide();
             })
-            $('.text').on('blur',function(){
+            $('.text').on('blur', function () {
                 if ($(this).val() == '') {
                     $(this).next().show();
                 }
@@ -113,7 +114,7 @@ var yyb = (function () {
                 }
             })
             // 密码
-            $('.pwd-input').on('blur', function(){
+            $('.pwd-input').on('blur', function () {
                 var arr = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[^]{8,16}$/
                 if ($(this).val() == '') {
                     $('.pwd-e').hide();
@@ -129,23 +130,23 @@ var yyb = (function () {
                 }
             })
             // 确认密码
-            $('.vam').on('blur', function(){
+            $('.vam').on('blur', function () {
                 if ($(this).val() == '') {
                     $('.vam-e').hide();
                     $(this).parent().parent().css('border', '1px solid #d9d9d9');
-                }else{
-                    if($(this).val() == $('.pwd-input').val()){
+                } else {
+                    if ($(this).val() == $('.pwd-input').val()) {
                         $('.vam-e').hide();
                         $(this).parent().parent().css('border', '1px solid #d9d9d9');
-                        
-                    }else{
+
+                    } else {
                         $('.vam-e').show();
                         $(this).parent().parent().css('border', '1px solid red');
                     }
                 }
             })
             // 邮箱
-            $('.e-mail').on('blur', function(){
+            $('.e-mail').on('blur', function () {
                 var arr = /^[\w.\-]+@(?:[a-z0-9]+(?:-[a-z0-9]+)*\.)+[a-z]{2,3}$/
                 if ($(this).val() == '') {
                     $('.mail-e').hide();
@@ -160,6 +161,7 @@ var yyb = (function () {
                     }
                 }
             })
+            //提交
 
 
 

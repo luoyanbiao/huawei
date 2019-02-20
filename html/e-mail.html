@@ -51,18 +51,19 @@
                         <option value="">还是中国</option>
                     </select>
                 </div>
-                <!--手机号码-->
+                <!--邮箱-->
+                <form action="" id="form">
                 <div class="input-container">
                     <div class="l input-left">
                         <span class="select-text ar-eg">邮件地址</span>
                     </div>
                     <div class="l input-content">
-                        <input type="text" class="text e-mail" />
+                        <input type="text" class="text e-mail" name="email"/>
                         <div class="text e-mail">请输入邮件地址</div>
                     </div>
                 </div>
                 <p class="mail-e error">对不起，您输入的电子邮箱错误</p>
-                <!-- 短信验证-->
+                <!-- 邮箱验证-->
                 <div class="input-container" id="errRandomCode-box">
                     <div class="l input-left">
                         邮件验证码
@@ -71,7 +72,7 @@
                         <a href="">获取验证码</a>
                     </div>
                     <div class="input-content">
-                        <input type="text" class="verify ime-disabled text" maxlength="8"/>
+                        <input type="text" class="verify ime-disabled text" maxlength="8" name="ps"/>
                         <div class="verify ime-disabled text">请输入邮件验证码</div>
                     </div>
                 </div>
@@ -82,7 +83,7 @@
                             密码
                         </div>
                         <div class="input-content">
-                            <input type="password" class="pwd-input text" />
+                            <input type="password" class="pwd-input text" name="pwd"/>
                             <div class="pwd-input text">请输密码</div>
                         </div>
                     </div>
@@ -92,7 +93,7 @@
                             确认密码
                         </div>
                         <div class="input-content">
-                            <input type="password" class="text vam" />
+                            <input type="password" class="text vam" name="pwdc" />
                             <div class="text vam">请再次输密码</div>
                         </div>
                     </div>
@@ -105,7 +106,7 @@
                             <span class="select-text ar-eg">+86(中国)</span>
                         </div>
                         <div class="l input-content">
-                            <input type="text" class="text input-number" onkeyup="this.value=this.value.replace(/[^\d]/g,'') " onafterpaste="this.value=this.value.replace(/[^\d]/g,'') "/>
+                            <input type="text" class="text input-number" onkeyup="this.value=this.value.replace(/[^\d]/g,'') " onafterpaste="this.value=this.value.replace(/[^\d]/g,'') " name="phone"/>
                             <div class="text input-number">请输入手机号</div>
                         </div>
                     </div>
@@ -119,7 +120,7 @@
                             <a href="">获取验证码</a>
                         </div>
                         <div class="input-content">
-                            <input type="text" class="verify ime-disabled text" maxlength="8"/>
+                            <input type="text" class="verify ime-disabled text" maxlength="8" name="psc"/>
                             <div class="verify ime-disabled text">请输入短信验证码</div>
                         </div>
                     </div>
@@ -127,6 +128,7 @@
                         <button class="btn btn-reg sel">注册</button>
                     </div>
                 </div>
+            </form>
             </div>
             <div class="box-shadow"></div>
             <div class="wp1 ft">
