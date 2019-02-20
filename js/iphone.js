@@ -15,16 +15,21 @@ var iphone = (function(){
               $(".show-time").show();
 
             });
-            $(".buy-b").click(function(e){
-             e.preventDefault()
-                $("buy-a").val()+1
-              
-            })
+           
+               var t = $(".buy-a");
+               $(".buy-b").click(function(e) {
+                e.preventDefault();
+                t.val(parseInt(t.val()) + 1); //点击加号输入框数值加1
+               
+            });
             $(".buy-c").click(function(e){
                 e.preventDefault()
-                   $("buy-a").val()-1
-                
-               })
+                t.val(parseInt(t.val())-1); //点击减号输入框数值减1
+                if(t.val()<=0){
+                    t.val(parseInt(t.val())+1); //最小值为1
+                }
+              
+            });
               
             
             var $repair =document.querySelector('.repair')
