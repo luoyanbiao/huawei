@@ -1,87 +1,530 @@
 <!doctype html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>购物车</title>
     <link rel="stylesheet" href="../css/reset.css">
     <link rel="stylesheet" href="../css/close.css">
+    <link rel="stylesheet" type="text/css" href="../css/reset.css" />
+    <link rel="stylesheet" type="text/css" href="../font_1034488_30nmt5qpo2a/iconfont.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.2/css/swiper.min.css">
+    <link rel="stylesheet" type="text/css" href="../font_1041145_nsg7si5tno/iconfont.css" />
+    <link rel="stylesheet" href="../css/myGWC.css">
 </head>
 <!-- 这个是商品结算页面 -->
+
 <body>
-    <section class="cartMain">
-        <div class="cartMain_hd">
-            <ul class="order_lists cartTop">
-                <li class="list_chk">
-                    <!--所有商品全选-->
-                    <input type="checkbox" id="all" class="whole_check">
-                    <label for="all"></label>
-                    全选
+
+    <!--                      导航栏开始                      -->
+    <nav id="login" class="container">
+        <div class="nav_l">
+            <ul>
+                <li class="li1">
+                    <a href="">首页</a>
                 </li>
-                <li class="list_con">商品</li>
-             
-                <li class="list_price">单价</li>
-                <li class="list_amount">数量</li>
-                <li class="list_sum">金额</li>
-                <li class="list_op">操作</li>
+                <li>
+                    <a href="">华为官网</a>
+                </li>
+                <li>
+                    <a href="">荣耀官网</a>
+                </li>
+                <li>
+                    <a href="">花粉俱乐部</a>
+                </li>
+                <li>
+                    <a href="">V码(优购码)</a>
+                </li>
+                <li>
+                    <a href="">企业购物</a>
+                </li>
+                <li>
+                    <a href="">Select Region</a>
+                </li>
+                <li>
+                    <div class="s-dropdown s1">
+                        <div class="t">
+                            <a class="icon-dropdown">更多精彩 <i class="iconfont icon-xiajiantou"></i></a>
+                        </div>
+                        <div class="d">
+                            <div class="dropdown-more m1">
+                                <a href="">EMUI</a>
+                                <a href="">应用市场</a>
+                                <a href="">华为终端云空间</a>
+                                <a href="">开发者联盟</a>
+                            </div>
+                        </div>
+                    </div>
+
+                </li>
             </ul>
         </div>
-<!--购物车展示的内容图片，商品信息等资料-->
-        <div class="cartBox">
-           
-            <div class="order_content">
-                <ul class="order_lists">
-                    <li class="list_chk">
-                        <input type="checkbox" id="checkbox_2" class="son_check">
-                        <label for="checkbox_2"></label>
-                    </li>
-                    <li class="list_con">
-                        <div class="list_img"><a href="javascript:;"><img src="../images/iphone2.png" alt=""></a></div>
-                        <div class="list_text"><a href="javascript:;">华为 HUAWEI nova 4 2000万超广角三摄 标配 全网通版（蜜语红·星耀版）</a></div>
-                    </li>
-                   
-                    <li class="list_price">
-                        <p class="price">￥3399</p>
-                    </li>
-                    <li class="list_amount">
-                        <div class="amount_box">
-                            <a href="javascript:;" class="reduce reSty">-</a>
-                            <input type="text" value="1" class="sum">
-                            <a href="javascript:;" class="plus">+</a>
+        <div class="nav_r">
+            <ul>
+                <li class="li1">
+                    <a href="javascript:void(0)" class="user_login">请登陆</a>
+                    <a href="">注册</a>
+                </li>
+                <li>
+                    <a href="">我的订单</a>
+                </li>
+                <li>
+                    <div class="s-dropdown s2">
+                        <div class="t">
+                            <a href="">客户服务<i class="iconfont icon-xiajiantou"></i></a>
                         </div>
-                    </li>
-                    <li class="list_sum">
-                        <p class="sum_price">￥3399</p>
-                    </li>
-                    <li class="list_op">
-                        <p class="del"><a href="javascript:;" class="delBtn">删除</a></p>
-                    </li>
-                </ul>
-                
-            </div>
-        </div>
+                        <div class="d">
+                            <div class="dropdown-more m2">
+                                <a href="">服务中心</a>
+                                <a href="">联系客服</a>
+                            </div>
+                        </div>
+                    </div>
 
-        
-        <!--底部-->
-        <div class="bar-wrapper">
-            <div class="bar-right">
-                <div class="piece">已选商品<strong class="piece_num">0</strong>件</div>
-                <div class="totalMoney">共计: <strong class="total_text">0.00</strong></div>
-                <div class="calBtn"><a href="javascript:;">立即结算</a></div>
+                </li>
+                <li>
+                    <div class="s-dropdown s3">
+                        <div class="t">
+                            <a href="">网站导航<i class="iconfont icon-xiajiantou"></i></a>
+                        </div>
+                        <div class="d">
+                            <div class="dropdown-navs n3">
+                                <a href="">
+                                    <div class="dropdown-navs-icon">
+                                        <span>
+
+                                        </span> 商城首页
+                                    </div>
+                                </a>
+                                <dl>
+                                    <dt>频道</dt>
+                                    <dd>
+                                        <a href="">华为专区</a>
+                                        <a href="">荣耀专区</a>
+                                        <a href="">企业购</a>
+                                    </dd>
+                                </dl>
+                                <dl>
+                                    <dt>产品</dt>
+                                    <dd>
+                                        <a href="">手机</a>
+                                        <a href="">智能家居</a>
+                                        <a href="">平板&笔记本</a>
+                                        <a href="">通用配件</a>
+                                        <a href="">智能穿戴</a>
+                                        <a href="">专属配件</a>
+                                    </dd>
+                                </dl>
+                                <dl>
+                                    <dt>增值服务</dt>
+                                    <dd>
+                                        <a href="">以旧换新</a>
+                                        <a href="">礼品包装</a>
+                                        <a href="">补够保障</a>
+                                        <a href="">99元换电池</a>
+                                    </dd>
+                                </dl>
+                                <dl>
+                                    <dt>会员</dt>
+                                    <dd>
+                                        <a href="">会员频道</a>
+                                    </dd>
+                                </dl>
+                            </div>
+                        </div>
+                    </div>
+
+                </li>
+                <li>
+                    <div class="s-dropdown s4">
+                        <div class="t">
+                            <a href="">手机版<i class="iconfont icon-xiajiantou"></i></a>
+                        </div>
+                        <div class="d">
+                            <div class="dropdown-code c4">
+                                <div class="clearfix dropdown-code-detail">
+                                    <a href="#">
+                                        <img src="../images/img57.png" />
+                                    </a>
+                                    <div class="code-info">
+                                        <h2>华为商城</h2>
+                                        <p>
+                                            新人专享好礼<br /> 最高5000积分
+                                        </p>
+                                        <span class="icon-andrid"></span>
+                                        <span class="icon-wechat"></span>
+                                    </div>
+                                </div>
+                                <div class="clearfix dropdown-code-detail">
+                                    <a href="#">
+                                        <img src="../images/img57.png" />
+                                    </a>
+                                    <div class="code-info">
+                                        <h2>华为商城</h2>
+                                        <p>
+                                            新人专享好礼<br /> 最高5000积分
+                                        </p>
+                                        <span class="icon-andrid"></span>
+                                        <span class="icon-wechat"></span>
+                                    </div>
+                                </div>
+                                <div class="clearfix dropdown-code-detail">
+                                    <a href="#">
+                                        <img src="../images/img57.png" />
+                                    </a>
+                                    <div class="code-info">
+                                        <h2>华为商城</h2>
+                                        <p>
+                                            新人专享好礼<br /> 最高5000积分
+                                        </p>
+                                        <span class="icon-andrid"></span>
+                                        <span class="icon-wechat"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!--                      导航栏开始结束                      -->
+
+    <!--                       logo开始                       -->
+    <div class="header order-header container">
+        <div class="layout">
+            <div class="left">
+                <div class="logo logo-word">
+                    <a href="" title="华为商城">
+                        <img src="../images/img79.png" alt="">
+                    </a>
+                    <span>我的购物车</span>
+                </div>
+            </div>
+            <div class="right">
+                <div class="progress-area progress-area-3">
+                    <div class="progress-sc-area">我的购物车</div>
+                </div>
             </div>
         </div>
-    </section>
-    <section class="model_bg"></section>
-    <section class="my_model">
-        <p class="title">删除宝贝<span class="closeModel">X</span></p>
-        <p>您确认要删除该宝贝吗？</p>
-        <div class="opBtn"><a href="javascript:;" class="dialog-sure">确定</a><a href="javascript:;" class="dialog-close">关闭</a></div>
-    </section>
-	
+    </div>
+    <!--                       logo结束                       -->
+
+    <!--                       内容开始                       -->
+    <div class="content container">
+        <div class="login-prompt">
+            您还没有登录！登录后可查看之前加入的商品
+            <a href="">登录</a>
+        </div>
+        <div>
+            <div class="hr-20"></div>
+            <section class="cartMain">
+                <div class="cartMain_hd">
+                    <ul class="order_lists cartTop">
+                        <li class="list_chk">
+                            <!--所有商品全选-->
+                            <input type="checkbox" id="all" class="whole_check">
+                            <label for="all"></label>
+                            全选
+                        </li>
+                        <li class="list_con">商品</li>
+
+                        <li class="list_price">单价</li>
+                        <li class="list_amount">数量</li>
+                        <li class="list_sum">金额</li>
+                        <li class="list_op">操作</li>
+                    </ul>
+                </div>
+                <!--购物车展示的内容图片，商品信息等资料-->
+                <div class="cartBox">
+
+                    <div class="order_content">
+                        <ul class="order_lists">
+                            <li class="list_chk">
+                                <input type="checkbox" id="checkbox_2" class="son_check">
+                                <label for="checkbox_2"></label>
+                            </li>
+                            <li class="list_con">
+                                <div class="list_img"><a href="javascript:;"><img src="../images/iphone2.png"
+                                            alt=""></a></div>
+                                <div class="list_text"><a href="javascript:;">华为 HUAWEI nova 4 2000万超广角三摄 标配
+                                        全网通版（蜜语红·星耀版）</a></div>
+                            </li>
+
+                            <li class="list_price">
+                                <p class="price">￥3399</p>
+                            </li>
+                            <li class="list_amount">
+                                <div class="amount_box">
+                                    <a href="javascript:;" class="reduce reSty">-</a>
+                                    <input type="text" value="1" class="sum">
+                                    <a href="javascript:;" class="plus">+</a>
+                                </div>
+                            </li>
+                            <li class="list_sum">
+                                <p class="sum_price">￥3399</p>
+                            </li>
+                            <li class="list_op">
+                                <p class="del"><a href="javascript:;" class="delBtn">删除</a></p>
+                            </li>
+                        </ul>
+
+
+                    </div>
+                </div>
+
+
+                <!--底部-->
+                <div class="bar-wrapper">
+                    <div class="bar-right">
+                        <div class="piece">已选商品<strong class="piece_num">0</strong>件</div>
+                        <div class="totalMoney">共计: <strong class="total_text">0.00</strong></div>
+                        <div class="calBtn"><a href="javascript:;">立即结算</a></div>
+                    </div>
+                </div>
+            </section>
+            <section class="model_bg"></section>
+            <section class="my_model">
+                <p class="title">删除宝贝<span class="closeModel">X</span></p>
+                <p>您确认要删除该宝贝吗？</p>
+                <div class="opBtn"><a href="javascript:;" class="dialog-sure">确定</a><a href="javascript:;"
+                        class="dialog-close">关闭</a></div>
+            </section>
+            <section class="pro-scroller">
+                <div class="t">
+                    热销推荐
+                </div>
+                <div class="b">
+                    <div class="swiper-container clearfix grid-list">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide swiper-slide-visible swiper-slide-active">
+                                <p class="p-img">
+                                    <a href="" title="HUAWEI Mate 20">
+                                        <img src="../images/gwc01.png" alt="">
+                                    </a>
+                                </p>
+                                <p class="p-name">
+                                    <a href="" title="HUAWEI Mate 20">HUAWEI Mate 20</a>
+                                </p>
+                                <p class="p-price">¥&nbsp;3999</p>
+                            </div>
+                            <div class="swiper-slide swiper-slide-visible">
+                                <p class="p-img">
+                                    <a href="" title="荣耀10 AI摄影手机">
+                                        <img src="../images/gwc02.jpg" alt="">
+                                    </a>
+                                </p>
+                                <p class="p-name">
+                                    <a href="" title="荣耀10 AI摄影手机">荣耀10 AI摄影手机</a>
+                                </p>
+                                <p class="p-price">¥&nbsp;2199</p>
+                            </div>
+                            <div class="swiper-slide swiper-slide-visible">
+                                <p class="p-img">
+                                    <a href="" title="HUAWEI Mate 20 X">
+                                        <img src="../images/gwc03.png" alt="">
+                                    </a>
+                                </p>
+                                <p class="p-name">
+                                    <a href="" title="HUAWEI Mate 20 X">HUAWEI Mate 20 X</a>
+                                </p>
+                                <p class="p-price">¥&nbsp;4999</p>
+                            </div>
+                            <div class="swiper-slide swiper-slide-visible">
+                                <p class="p-img">
+                                    <a href="" title="荣耀8X">
+                                        <img src="../images/gwc04.png" alt="">
+                                    </a>
+                                </p>
+                                <p class="p-name">
+                                    <a href="" title="荣耀8X">荣耀8X</a>
+                                </p>
+                                <p class="p-price">¥&nbsp;1399</p>
+                            </div>
+                            <div class="swiper-slide swiper-slide-visible">
+                                <p class="p-img">
+                                    <a href="" title="华为便携照片打印机">
+                                        <img src="../images/gwc05.png" alt="">
+                                    </a>
+                                </p>
+                                <p class="p-name">
+                                    <a href="" title="华为便携照片打印机">华为便携照片打印机</a>
+                                </p>
+                                <p class="p-price">¥&nbsp;589</p>
+                            </div>
+                            <div class="swiper-slide swiper-slide-visible">
+                                <p class="p-img">
+                                    <a href="" title="荣耀10青春版">
+                                        <img src="../images/gwc06.png" alt="">
+                                    </a>
+                                </p>
+                                <p class="p-name">
+                                    <a href="" title="荣耀10青春版">荣耀10青春版</a>
+                                </p>
+                                <p class="p-price">¥&nbsp;1399</p>
+                            </div>
+                        </div>
+                        <div class="swiper-button-prev iconfont icon-zuojiantou"></div>
+                        <div class="swiper-button-next iconfont icon-youjiantou"></div>
+                    </div>
+                </div>
+            </section>
+            <div class="hr-60"></div>
+        </div>
+    </div>
+    <!--                       内容结束                       -->
+
+    <!--                        页足开始                       -->
+    <footer id="footer" class="container">
+        <div class="f-top">
+            <ul>
+                <li>
+                    <i class="icon01 icon"></i>
+                    <a href="#">百强企业 品质保证</a>
+                </li>
+                <li>
+                    <i class="icon02 icon"></i>
+                    <a href="#">7天退货 15天换货</a>
+                </li>
+                <li>
+                    <i class="icon03 icon"></i>
+                    <a href="#">48元免运费</a>
+                </li>
+                <li>
+                    <i class="icon04 icon"></i>
+                    <a href="#">1000家维修网点 全国联保</a>
+                </li>
+
+            </ul>
+
+        </div>
+        <div class="f-middle">
+            <div class="f-item">
+                <dl>
+                    <dt>购物相关</dt>
+                    <dd><a href="#">购物指南</a></dd>
+                    <dd><a href="#">购物指南</a></dd>
+                    <dd><a href="#">购物指南</a></dd>
+                    <dd><a href="#">购物指南</a></dd>
+                </dl>
+                <dl>
+                    <dt>保修与退换货</dt>
+                    <dd><a href="#">购物指南</a></dd>
+                    <dd><a href="#">购物指南</a></dd>
+                    <dd><a href="#">购物指南</a></dd>
+                    <dd><a href="#">购物指南配件</a></dd>
+                    <dd><a href="#">购物指南配件</a></dd>
+                </dl>
+                <dl>
+                    <dt>维修与技术支持</dt>
+                    <dd><a href="#">售后网点</a></dd>
+                    <dd><a href="#">售后网点</a></dd>
+                    <dd><a href="#">售后网点</a></dd>
+                    <dd><a href="#">配件防伪查询</dd>
+                    <dd><a href="#">配件防伪</a></dd>
+                </dl>
+                <dl>
+                    <dt>特色服务</dt>
+                    <dd><a href="#">售后网点</a></dd>
+                    <dd><a href="#">售后网点</a></dd>
+                    <dd><a href="#">购物指南</a></dd>
+                    <dd><a href="#">礼品包装</a></dd>
+                </dl>
+                <dl>
+                    <dt>关于我们</dt>
+                    <dd><a href="#">公司介绍</a></dd>
+                    <dd><a href="#">公司商城介绍</a></dd>
+                    <dd><a href="#">公司商城介绍</a></dd>
+                    <dd><a href="#">公司商城门店</a></dd>
+                    <dd><a href="#">公司商城</a></dd>
+                    <dd><a href="#">意见反馈</a></dd>
+                </dl>
+                <dl class="carousel">
+                    <dt>友情链接 <a href="#"><i class="iconfont icon-zuojiantou"></i><i
+                                class="iconfont icon-youjiantou"></i></a></dt>
+                    <dd><a href="#">华为集团</a></dd>
+                    <dd><a href="#">华为GBG官网</a></dd>
+                    <dd><a href="#">购物指南</a></dd>
+                    <dd><a href="#">礼品包装</a></dd>
+                    <dd><a href="#">网站地图</a></dd>
+                </dl>
+            </div>
+            <div class="f-serve">
+                <h2>400-088-6888</h2>
+                <p class="p1">7x24小时客服热线 (仅收市话费)</p>
+                <a href="#" class="kefu"><i class="erji"></i>在线客服</a>
+                <p class="p2">关注Vmall: <a href="#" class="icon vx"></a> <a href="#" class="icon td"></a> <a href="#"
+                        class="icon vb"></a> <a href="#" class="icon hw"></a></p>
+                <div class="ewm"><img src="../images/img06.jpg" alt="" width="124" height="132"></div>
+            </div>
+        </div>
+        <div class="f-bottom">
+            <div class="f-logo"><a href="#" title="vmall.png">vmall.png</a></div>
+            <div class="f-main">
+                <p class="f-nav">
+                    <a href="#">华为集团</a>
+                    <a href="#">华为集团</a>
+                    <a href="#">华为集团</a>
+                    <a href="#">华为集团</a>
+                    <a href="#">华为集团</a>
+                    <a href="#">华为集团</a>
+                    <a href="#">华为集团</a>
+                    <a href="#">华为集团</a>
+                    <a href="#">华为集团</a>
+                    <a href="#">华为集团</a>
+                </p>
+                <p>
+                    <a href="#">隐私声明</a>
+                    <a href="#">服务协议</a>
+                    <a href="#">COOKIES</a>
+                    <i>Copyright © 2012-2019 华为软件技术有限公司 版权所有 保留一切权利 公安备案</i>
+                    <a href="#">苏公网安备32011402010009号</a>
+                </p>
+                <p>
+                    <a href="#">苏ICP备17040376-6号</a>
+                    <a href="#">增值电信业务经营许可证：苏B2-20130048号</a>
+                    <a href="#">网络文化经营许可证：苏网文[2015] 1599-026号TRUSTe隐私认证电子营业执照</a>
+                </p>
+            </div>
+            <div class="f-img">
+                <a href="#"><img src="../images/img55.jpg" width="90px" height="32px" /></a>
+                <a href="#"><img src="../images/img53.png"></a>
+
+            </div>
+        </div>
+    </footer>
+    <!--                        页足结束                      -->
+
+    <!--                       fixed开始                       -->
+    <div class="hungBar">
+        <div class="hungBar-content">
+            <a href="" class="iconfont icon-gouwuche">
+            </a>
+            <a href="" class="iconfont icon-kefu"></a>
+            <a href="" class="iconfont icon-bianji"></a>
+        </div>
+    </div>
+
+    <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.2/js/swiper.min.js"></script>
+    <script src="../js/yyb.js"></script>
+
+    <script>
+        var swiper = new Swiper('.swiper-container', {
+            slidesPerView: 5,
+            slidesPerGroup: 5,
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+        });
+    </script>
     <script src="../js/jquery.min.js"></script>
     <script src="../js/close.js"></script>
-	
+
 </body>
+
 </html>
