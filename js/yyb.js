@@ -9,7 +9,7 @@ var yyb = (function () {
     var $c4 = $('.c4');
     var $s5 = $('.s5');
     var $m5 = $('.m5');
-    var $inputAll = document.querySelectorAll('input');
+
     return {
         init() {
             this.event();
@@ -73,6 +73,7 @@ var yyb = (function () {
                 // $('.nav-sub').css('display','none');
                 $('#naverSub01').slideUp();
             })
+            //主页input框
             $('.text').on('focus', function () {
                 $('.search-bar-key').hide();
             })
@@ -96,13 +97,18 @@ var yyb = (function () {
                 var arr = /^1[34578]\d{9}$/;
                 if ($(this).val() == '') {
                     $('.phone-e').hide();
+                    $('.phone-e').removeAttr('id');
                     $(this).parent().parent().css('border', '1px solid #d9d9d9');
                 } else {
+                    //验证成功
                     if (arr.test($(this).val())) {
                         $('.phone-e').hide();
+                        $('.phone-e').removeAttr('id');
                         $(this).parent().parent().css('border', '1px solid #d9d9d9');
                     } else {
+                        //验证失败
                         $('.phone-e').show();
+                        $('.phone-e').attr('id','red');
                         $(this).parent().parent().css('border', '1px solid red');
                     }
                 }
@@ -118,13 +124,18 @@ var yyb = (function () {
                 var arr = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[^]{8,16}$/
                 if ($(this).val() == '') {
                     $('.pwd-e').hide();
+                    $('.pwd-e').removeAttr('id');
                     $(this).parent().parent().css('border', '1px solid #d9d9d9');
                 } else {
+                    //验证成功
                     if (arr.test($(this).val())) {
                         $('.pwd-e').hide();
+                        $('.pwd-e').removeAttr('id');
                         $(this).parent().parent().css('border', '1px solid #d9d9d9');
                     } else {
+                        //验证失败
                         $('.pwd-e').show();
+                        $('.pwd-e').attr('id','red');
                         $(this).parent().parent().css('border', '1px solid red');
                     }
                 }
@@ -133,36 +144,69 @@ var yyb = (function () {
             $('.vam').on('blur', function () {
                 if ($(this).val() == '') {
                     $('.vam-e').hide();
+                    $('.vam-e').removeAttr('id');
                     $(this).parent().parent().css('border', '1px solid #d9d9d9');
                 } else {
+                    //验证成功
                     if ($(this).val() == $('.pwd-input').val()) {
                         $('.vam-e').hide();
+                        $('.vam-e').removeAttr('id');
                         $(this).parent().parent().css('border', '1px solid #d9d9d9');
-
                     } else {
+                        //验证失败
                         $('.vam-e').show();
+                        $('.vam-e').attr('id','red');
                         $(this).parent().parent().css('border', '1px solid red');
                     }
                 }
             })
-            // 邮箱
+            // 邮箱验证
             $('.e-mail').on('blur', function () {
                 var arr = /^[\w.\-]+@(?:[a-z0-9]+(?:-[a-z0-9]+)*\.)+[a-z]{2,3}$/
                 if ($(this).val() == '') {
                     $('.mail-e').hide();
+                    $('.mail-e').removeAttr('id');
                     $(this).parent().parent().css('border', '1px solid #d9d9d9');
                 } else {
+                    //验证成功
                     if (arr.test($(this).val())) {
                         $('.mail-e').hide();
+                        $('.mail-e').removeAttr('id');
                         $(this).parent().parent().css('border', '1px solid #d9d9d9');
                     } else {
+                        //验证失败
                         $('.mail-e').show();
+                        $('.mail-e').attr('id','red');
                         $(this).parent().parent().css('border', '1px solid red');
                     }
                 }
             })
             //提交
-
+            $('#form').submit(function () {
+                var $inputAll = document.querySelectorAll('input');
+                var $pAll = document.querySelectorAll('.error');
+                for (i = 0; i < $inputAll.length; i++) {
+                    // var $red = $(this).parent().parent().next();
+                    if ($inputAll[i].value == '') {
+                        alert("内容不能为空");
+                        $inputAll[i].focus();
+                        return false;
+                    }
+                for(j = 0; j < $pAll.length; j++){
+                    if($pAll[i].id == 'red'){
+                        alert("验证错误");
+                        return false;
+                    }
+                }
+                    
+                    // if($red.id == 'red'){
+                    //     alert("验证错误");
+                    //     $inputAll[i].focus();
+                    //     return false;
+                    // }
+                }
+                return true;
+            })
 
 
 
