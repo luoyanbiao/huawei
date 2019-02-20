@@ -73,6 +73,17 @@ var yyb = (function () {
                 // $('.nav-sub').css('display','none');
                 $('#naverSub01').slideUp();
             })
+            //红色小边框动画
+            $(".grid-items").on('mouseenter',function(){
+               
+                $(".red-wrap").animate({width:'374px'});
+               
+            })
+            $(".grid-items").on('mouseleave',function(){
+                $(".red-wrap").animate({width:'-374px'});
+               
+            })
+           
             //主页input框
             $('.text').on('focus', function () {
                 $('.search-bar-key').hide();
