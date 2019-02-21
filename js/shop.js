@@ -46,7 +46,7 @@ var shop_car = (function (){
                     </div>
                 </li>
                 <li class="list_sum">
-                    <p class="sum_price">${price2*num}</p>
+                    <p class="sum_price">￥${price2*num}</p>
                 </li>
                 <li class="list_op">
                     <p class="del"><a href="javascript:;" class="delBtn">删除</a></p>
