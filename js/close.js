@@ -219,7 +219,7 @@ $(function () {
         var calBtn = $('.calBtn a');
         $sonCheckBox.each(function () {
             if ($(this).is(':checked')) {
-                var goods = parseInt($(this).parents('.order_lists').find('.sum_price').html().substring(1));
+                var goods = parseInt($(this).parents('.order_lists').find('.sum_price').html().substring(0));
                 var num =  parseInt($(this).parents('.order_lists').find('.sum').val());
                 total_money += goods;
                 total_count += num;
@@ -237,6 +237,7 @@ $(function () {
         }else{
             if(calBtn.hasClass('btn_sty')){
                 calBtn.removeClass('btn_sty');
+                
             }
         }
     }
