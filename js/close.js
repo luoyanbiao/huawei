@@ -237,6 +237,7 @@ $(function () {
         }else{
             if(calBtn.hasClass('btn_sty')){
                 calBtn.removeClass('btn_sty');
+                
             }
         }
     }

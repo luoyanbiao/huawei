@@ -7,7 +7,8 @@ var iphone = (function(){
         event(){
             var _this = this;
            
-            $('.select').on('click','.red', function () {
+            $('.select').on('click','.red', function (e) {
+                e.preventDefault();
                 $(this).css("border-color","red")
                 $(this).siblings().css("border-color","black")
                 })
@@ -30,7 +31,15 @@ var iphone = (function(){
                 }
               
             });
-              
+            $('.buy-d').click(function(e){
+                e.preventDefault()
+                var title = $('.hua-phone').text()
+                var price = $('.price-b').text()
+                var num = $('.buy-a').val()
+                var imgUrl = $('#showbox b img').attr('src')
+                window.location.href=`../html/close.html?title=${title}&price=${price}&num=${num}&imgUrl=${imgUrl}`
+                });
+          
             
             var $repair =document.querySelector('.repair')
             var $drop =document.querySelector('.drop')

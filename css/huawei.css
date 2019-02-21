@@ -556,7 +556,12 @@
 	position: relative;
 	text-align: center;
 }
-
+.jp_b .red-wrap{
+	height: 5px;
+	background:#7c0303;
+	display: inline-block;
+	position: absolute;
+}
 .jp_t .red {
 	width: 30px;
 	height: 5px;
