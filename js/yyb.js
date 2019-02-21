@@ -78,7 +78,11 @@ var yyb = (function () {
                 $('.search-bar-key').hide();
             })
             $('.text').on('blur', function () {
-                $('.search-bar-key').show();
+                if($(this).val() == ''){
+                    $('.search-bar-key').show();
+                }else{
+                    $('.search-bar-key').hide();
+                }
             })
             // 注册验证
             $('.text').on('click', function () {
@@ -108,7 +112,7 @@ var yyb = (function () {
                     } else {
                         //验证失败
                         $('.phone-e').show();
-                        $('.phone-e').attr('id','red');
+                        $('.phone-e').attr('id', 'red');
                         $(this).parent().parent().css('border', '1px solid red');
                     }
                 }
@@ -135,7 +139,7 @@ var yyb = (function () {
                     } else {
                         //验证失败
                         $('.pwd-e').show();
-                        $('.pwd-e').attr('id','red');
+                        $('.pwd-e').attr('id', 'red');
                         $(this).parent().parent().css('border', '1px solid red');
                     }
                 }
@@ -155,7 +159,7 @@ var yyb = (function () {
                     } else {
                         //验证失败
                         $('.vam-e').show();
-                        $('.vam-e').attr('id','red');
+                        $('.vam-e').attr('id', 'red');
                         $(this).parent().parent().css('border', '1px solid red');
                     }
                 }
@@ -176,7 +180,7 @@ var yyb = (function () {
                     } else {
                         //验证失败
                         $('.mail-e').show();
-                        $('.mail-e').attr('id','red');
+                        $('.mail-e').attr('id', 'red');
                         $(this).parent().parent().css('border', '1px solid red');
                     }
                 }
@@ -186,32 +190,21 @@ var yyb = (function () {
                 var $inputAll = document.querySelectorAll('input');
                 var $pAll = document.querySelectorAll('.error');
                 for (i = 0; i < $inputAll.length; i++) {
-                    // var $red = $(this).parent().parent().next();
                     if ($inputAll[i].value == '') {
                         alert("内容不能为空");
                         $inputAll[i].focus();
                         return false;
                     }
-                for(j = 0; j < $pAll.length; j++){
-                    if($pAll[i].id == 'red'){
-                        alert("验证错误");
-                        return false;
+                    for (j = 0; j < $pAll.length; j++) {
+                        if ($pAll[i].id == 'red') {
+                            alert("验证错误");
+                            return false;
+                        }
                     }
                 }
-                    
-                    // if($red.id == 'red'){
-                    //     alert("验证错误");
-                    //     $inputAll[i].focus();
-                    //     return false;
-                    // }
-                }
+                $('.btn').attr('id','btn');
                 return true;
             })
-
-
-
-
-
         }
     }
 }());
